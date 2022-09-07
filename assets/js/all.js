@@ -137,6 +137,5 @@ var swiperOther = new Swiper(".swiperOther", {
 $('.masonry-row').imagesLoaded().progress(function () {
   $('.masonry-row').masonry(); // 渲染整體畫面
 }); // AOS
-
-AOS.init();
+// AOS.init();
 //# sourceMappingURL=all.js.map
