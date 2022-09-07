@@ -4,4 +4,4 @@ $('.masonry-row').imagesLoaded().progress( function() {
 });
 
 // AOS
-AOS.init();
+// AOS.init();
