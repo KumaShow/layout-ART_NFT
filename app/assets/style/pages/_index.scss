@@ -1,0 +1,77 @@
+.recommend {
+  .card {
+    &-img {
+      min-height: 340px;
+      max-height: 340px;
+    }
+  }
+}
+
+.ranking {
+  &__order {
+    @include respond-min(lg) {
+      width: 64px;
+      height: 64px;
+      background-color: #fff;
+      border-right: 1px solid #000;
+      border-bottom: 1px solid #000;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+
+  &__img {
+    min-width: 87px;
+    min-height: 95px;
+    
+    &--top {
+      @include respond-min(lg) {
+        max-width: 414px;
+        height: 374px;
+      }
+    }
+
+    &--1 {
+      background: url("../images/art04.jpg") center center;
+      background-size: cover;
+    }
+
+    &--2 {
+      background: url("../images/art05.jpg") center center;
+      background-size: cover;
+    }
+    &--3 {
+      background: url("../images/art06.jpg") center center;
+      background-size: cover;
+    }
+    &--4 {
+      background: url("../images/art13.jpg") center center;
+      background-size: cover;
+    }
+    &--5 {
+      background: url("../images/art07.jpg") center center;
+      background-size: cover;
+    }
+    &--6 {
+      background: url("../images/art08.jpg") center center;
+      background-size: cover;
+    }
+
+    .btn-more {
+      background: #fff;
+      color: #000;
+      margin-right: -1px;
+      &:hover {
+        background: $primary;
+        color: #fff;
+      }
+    }
+  }
+  &__img:hover {
+    @include respond-min(lg) {
+      .mask-dark {
+        display: block!important;
+      }
+    }
+  }
+}

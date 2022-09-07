@@ -1,0 +1,548 @@
+---
+title: 市價排行 | ART NFT
+layout: ./app/layout.ejs
+engine: ejs
+current: marketRanking
+---
+
+<section class="container pt-4 pb-6 pt-lg-6 pb-lg-11">
+  <header class="text-center mb-7">
+    <h2 class="fs-1 fw-bold mb-4">市價排行榜</h2>
+    <p>NFT系列藝術作品排行榜！全球注目指標</p>
+  </header>
+  <!-- <div> -->
+  <table class="table">
+    <thead>
+      <tr class="d-none d-md-table-row">
+        <th scope="col"></th>
+        <th scope="col">系列作品名稱</th>
+        <th scope="col" class="text-end">價值</th>
+        <th scope="col" class="text-end">24h%</th>
+        <th scope="col" class="text-end">7d%</th>
+        <th scope="col" class="text-end">地板價</th>
+        <th scope="col" class="text-end">擁有者</th>
+        <th scope="col" class="text-end">作品數量</th>
+      </tr>
+    </thead>
+    <tbody class="bg-white border">
+      <!-- tr1 -->
+      <tr class="ranking-item border-bottom triangle-br-plus" data-bs-toggle="collapse" data-bs-target="#collapseTr1">
+        <th scope="row" class="fs-3 text-center align-middle border-end">1</th>
+        <td><img src="./assets/images/art13.jpg" alt="Art13" class="rounded-circle img-cover me-2 me-md-3" 
+          style="width: 48px; height: 48px;">追求者送我的花
+        </td>
+        <td class=" text-end text-end">
+          <i class="fa-brands fa-ethereum"></i>
+          1,774.19
+        </td>
+        <td class="text-success d-none d-md-table-cell text-end">+220.49%</td>
+        <td class="text-danger d-none d-md-table-cell text-end">-2.43%</td>
+        <td class="d-none d-md-table-cell text-end">
+          <i class="fa-brands fa-ethereum"></i>
+          2.90
+        </td>
+        <td class="d-none d-md-table-cell text-end">32.1K</td>
+        <td class="d-none d-md-table-cell text-end">1000</td>
+      </tr>
+      <!-- tr1 手機板 -->
+      <tr class="border-bottom d-md-none">
+        <td colspan="8" class="p-0">
+          <div class="collapse" id="collapseTr1">
+            <ul class="text-center p-3 row gy-3 justify-content-center">
+              <li class="col-4">
+                <p class="fs-7">24h%</p>
+                <p class="fs-4 text-success">+220.49%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">7d%</p>
+                <p class="fs-4 text-danger">-2.43%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">地板價</p>
+                <p class="fs-4">
+                  <i class="fa-brands fa-ethereum"></i>
+                  2.90
+                </p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">擁有者</p>
+                <p class="fs-4">32.1K</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">作品數量</p>
+                <p class="fs-4">1000</p>
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <!-- tr2 -->
+      <tr class="ranking-item border-bottom triangle-br-plus" data-bs-toggle="collapse" data-bs-target="#collapseTr2">
+        <th scope="row" class="fs-3 text-center align-middle border-end">2</th>
+        <td><img src="./assets/images/art06.jpg" alt="Art06" class="rounded-circle img-cover me-2 me-md-3" 
+          style="width: 48px; height: 48px;">夏天的時候
+        </td>
+        <td class=" text-end text-end">
+          <i class="fa-brands fa-ethereum"></i>
+          1,524.89
+        </td>
+        <td class="text-success d-none d-md-table-cell text-end">+80.49%</td>
+        <td class="text-danger d-none d-md-table-cell text-end">-2.43%</td>
+        <td class="d-none d-md-table-cell text-end">
+          <i class="fa-brands fa-ethereum"></i>
+          90.23
+        </td>
+        <td class="d-none d-md-table-cell text-end">32.1K</td>
+        <td class="d-none d-md-table-cell text-end">1000</td>
+      </tr>
+      <!-- tr2 手機板 -->
+      <tr class="border-bottom d-md-none">
+        <td colspan="8" class="p-0">
+          <div class="collapse" id="collapseTr2">
+            <ul class="text-center p-3 row gy-3 justify-content-center">
+              <li class="col-4">
+                <p class="fs-7">24h%</p>
+                <p class="fs-4 text-success">+80.49%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">7d%</p>
+                <p class="fs-4 text-danger">-2.43%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">地板價</p>
+                <p class="fs-4">
+                  <i class="fa-brands fa-ethereum"></i>
+                  90.23
+                </p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">擁有者</p>
+                <p class="fs-4">32.1K</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">作品數量</p>
+                <p class="fs-4">1000</p>
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <!-- tr3 -->
+      <tr class="ranking-item border-bottom triangle-br-plus" data-bs-toggle="collapse" data-bs-target="#collapseTr3">
+        <th scope="row" class="fs-3 text-center align-middle border-end">3</th>
+        <td><img src="./assets/images/art02.jpg" alt="Art02" class="rounded-circle img-cover me-2 me-md-3" 
+          style="width: 48px; height: 48px;">海洋波度
+        </td>
+        <td class=" text-end text-end">
+          <i class="fa-brands fa-ethereum"></i>
+          1,400.59
+        </td>
+        <td class="text-danger d-none d-md-table-cell text-end">-3.92%</td>
+        <td class="text-danger d-none d-md-table-cell text-end">-13.43%</td>
+        <td class="d-none d-md-table-cell text-end">
+          <i class="fa-brands fa-ethereum"></i>
+          2.90
+        </td>
+        <td class="d-none d-md-table-cell text-end">32.1K</td>
+        <td class="d-none d-md-table-cell text-end">1000</td>
+      </tr>
+      <!-- tr3 手機板 -->
+      <tr class="border-bottom d-md-none">
+        <td colspan="8" class="p-0">
+          <div class="collapse" id="collapseTr3">
+            <ul class="text-center p-3 row gy-3 justify-content-center">
+              <li class="col-4">
+                <p class="fs-7">24h%</p>
+                <p class="fs-4 text-danger">-3.92%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">7d%</p>
+                <p class="fs-4 text-danger">-13.43%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">地板價</p>
+                <p class="fs-4">
+                  <i class="fa-brands fa-ethereum"></i>
+                  2.90
+                </p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">擁有者</p>
+                <p class="fs-4">32.1K</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">作品數量</p>
+                <p class="fs-4">1000</p>
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+      <!-- tr4 -->
+      <tr class="ranking-item border-bottom triangle-br-plus" data-bs-toggle="collapse" data-bs-target="#collapseTr4">
+        <th scope="row" class="fs-3 text-center align-middle border-end">4</th>
+        <td><img src="./assets/images/art03.jpg" alt="Art03" class="rounded-circle img-cover me-2 me-md-3" 
+          style="width: 48px; height: 48px;">賴床真的很不好
+        </td>
+        <td class=" text-end text-end">
+          <i class="fa-brands fa-ethereum"></i>
+          1,224.88
+        </td>
+        <td class="text-danger d-none d-md-table-cell text-end">-9.23%</td>
+        <td class="text-danger d-none d-md-table-cell text-end">-20.43%</td>
+        <td class="d-none d-md-table-cell text-end">
+          <i class="fa-brands fa-ethereum"></i>
+          2.90
+        </td>
+        <td class="d-none d-md-table-cell text-end">32.1K</td>
+        <td class="d-none d-md-table-cell text-end">1000</td>
+      </tr>
+      <!-- tr4 手機板 -->
+      <tr class="border-bottom d-md-none">
+        <td colspan="8" class="p-0">
+          <div class="collapse" id="collapseTr4">
+            <ul class="text-center p-3 row gy-3 justify-content-center">
+              <li class="col-4">
+                <p class="fs-7">24h%</p>
+                <p class="fs-4 text-danger">-9.23%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">7d%</p>
+                <p class="fs-4 text-danger">-20.43%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">地板價</p>
+                <p class="fs-4">
+                  <i class="fa-brands fa-ethereum"></i>
+                  2.90
+                </p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">擁有者</p>
+                <p class="fs-4">32.1K</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">作品數量</p>
+                <p class="fs-4">1000</p>
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+
+      <!-- tr5 -->
+      <tr class="ranking-item border-bottom triangle-br-plus" data-bs-toggle="collapse" data-bs-target="#collapseTr5">
+        <th scope="row" class="fs-3 text-center align-middle border-end">5</th>
+        <td><img src="./assets/images/art01.jpg" alt="Art01" class="rounded-circle img-cover me-2 me-md-3" 
+          style="width: 48px; height: 48px;">瞳孔:流動的脈絡
+        </td>
+        <td class=" text-end text-end">
+          <i class="fa-brands fa-ethereum"></i>
+          1,021.09
+        </td>
+        <td class="text-success d-none d-md-table-cell text-end">+83.49%</td>
+        <td class="text-danger d-none d-md-table-cell text-end">-1.43%</td>
+        <td class="d-none d-md-table-cell text-end">
+          <i class="fa-brands fa-ethereum"></i>
+          2.90
+        </td>
+        <td class="d-none d-md-table-cell text-end">32.1K</td>
+        <td class="d-none d-md-table-cell text-end">1000</td>
+      </tr>
+      <!-- tr5 手機板 -->
+      <tr class="border-bottom d-md-none">
+        <td colspan="8" class="p-0">
+          <div class="collapse" id="collapseTr5">
+            <ul class="text-center p-3 row gy-3 justify-content-center">
+              <li class="col-4">
+                <p class="fs-7">24h%</p>
+                <p class="fs-4 text-success">+83.49%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">7d%</p>
+                <p class="fs-4 text-danger">-1.43%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">地板價</p>
+                <p class="fs-4">
+                  <i class="fa-brands fa-ethereum"></i>
+                  2.90
+                </p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">擁有者</p>
+                <p class="fs-4">32.1K</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">作品數量</p>
+                <p class="fs-4">1000</p>
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+
+      <!-- tr6 -->
+      <tr class="ranking-item border-bottom triangle-br-plus" data-bs-toggle="collapse" data-bs-target="#collapseTr6">
+        <th scope="row" class="fs-3 text-center align-middle border-end">6</th>
+        <td><img src="./assets/images/art12.jpg" alt="Art12" class="rounded-circle img-cover me-2 me-md-3" 
+          style="width: 48px; height: 48px;">哭泣的時候
+        </td>
+        <td class=" text-end text-end">
+          <i class="fa-brands fa-ethereum"></i>
+          921.42
+        </td>
+        <td class="text-danger d-none d-md-table-cell text-end">-9.43%</td>
+        <td class="text-success d-none d-md-table-cell text-end">+183.49%</td>
+        <td class="d-none d-md-table-cell text-end">
+          <i class="fa-brands fa-ethereum"></i>
+          2.90
+        </td>
+        <td class="d-none d-md-table-cell text-end">32.1K</td>
+        <td class="d-none d-md-table-cell text-end">1000</td>
+      </tr>
+      <!-- tr6 手機板 -->
+      <tr class="border-bottom d-md-none">
+        <td colspan="8" class="p-0">
+          <div class="collapse" id="collapseTr6">
+            <ul class="text-center p-3 row gy-3 justify-content-center">
+              <li class="col-4">
+                <p class="fs-7">24h%</p>
+                <p class="fs-4 text-danger">-9.43%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">7d%</p>
+                <p class="fs-4 text-success">+183.49%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">地板價</p>
+                <p class="fs-4">
+                  <i class="fa-brands fa-ethereum"></i>
+                  2.90
+                </p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">擁有者</p>
+                <p class="fs-4">32.1K</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">作品數量</p>
+                <p class="fs-4">1000</p>
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+
+      <!-- tr7 -->
+      <tr class="ranking-item border-bottom triangle-br-plus" data-bs-toggle="collapse" data-bs-target="#collapseTr7">
+        <th scope="row" class="fs-3 text-center align-middle border-end">7</th>
+        <td><img src="./assets/images/art14.jpg" alt="Art14" class="rounded-circle img-cover me-2 me-md-3" 
+          style="width: 48px; height: 48px;">破碎的菠蘿麵包
+        </td>
+        <td class=" text-end text-end">
+          <i class="fa-brands fa-ethereum"></i>
+          888.88
+        </td>
+        <td class="text-success d-none d-md-table-cell text-end">+20.49%</td>
+        <td class="text-danger d-none d-md-table-cell text-end">-0.43%</td>
+        <td class="d-none d-md-table-cell text-end">
+          <i class="fa-brands fa-ethereum"></i>
+          2.90
+        </td>
+        <td class="d-none d-md-table-cell text-end">32.1K</td>
+        <td class="d-none d-md-table-cell text-end">1000</td>
+      </tr>
+      <!-- tr7 手機板 -->
+      <tr class="border-bottom d-md-none">
+        <td colspan="8" class="p-0">
+          <div class="collapse" id="collapseTr7">
+            <ul class="text-center p-3 row gy-3 justify-content-center">
+              <li class="col-4">
+                <p class="fs-7">24h%</p>
+                <p class="fs-4 text-success">+20.49%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">7d%</p>
+                <p class="fs-4 text-danger">-0.43%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">地板價</p>
+                <p class="fs-4">
+                  <i class="fa-brands fa-ethereum"></i>
+                  2.90
+                </p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">擁有者</p>
+                <p class="fs-4">32.1K</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">作品數量</p>
+                <p class="fs-4">1000</p>
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+
+      <!-- tr8 -->
+      <tr class="ranking-item border-bottom triangle-br-plus" data-bs-toggle="collapse" data-bs-target="#collapseTr8">
+        <th scope="row" class="fs-3 text-center align-middle border-end">8</th>
+        <td><img src="./assets/images/art08.jpg" alt="Art08" class="rounded-circle img-cover me-2 me-md-3" 
+          style="width: 48px; height: 48px;">人生中的貓咪們
+        </td>
+        <td class=" text-end text-end">
+          <i class="fa-brands fa-ethereum"></i>
+          770.23
+        </td>
+        <td class="text-success d-none d-md-table-cell text-end">+32.49%</td>
+        <td class="text-success d-none d-md-table-cell text-end">+30.23</td>
+        <td class="d-none d-md-table-cell text-end">
+          <i class="fa-brands fa-ethereum"></i>
+          2.90
+        </td>
+        <td class="d-none d-md-table-cell text-end">32.1K</td>
+        <td class="d-none d-md-table-cell text-end">1000</td>
+      </tr>
+      <!-- tr8 手機板 -->
+      <tr class="border-bottom d-md-none">
+        <td colspan="8" class="p-0">
+          <div class="collapse" id="collapseTr8">
+            <ul class="text-center p-3 row gy-3 justify-content-center">
+              <li class="col-4">
+                <p class="fs-7">24h%</p>
+                <p class="fs-4 text-success">+32.49%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">7d%</p>
+                <p class="fs-4 text-success">+30.23</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">地板價</p>
+                <p class="fs-4">
+                  <i class="fa-brands fa-ethereum"></i>
+                  2.90
+                </p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">擁有者</p>
+                <p class="fs-4">32.1K</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">作品數量</p>
+                <p class="fs-4">1000</p>
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+
+      <!-- tr9 -->
+      <tr class="ranking-item border-bottom triangle-br-plus" data-bs-toggle="collapse" data-bs-target="#collapseTr9">
+        <th scope="row" class="fs-3 text-center align-middle border-end">9</th>
+        <td><img src="./assets/images/art29.jpg" alt="Art29" class="rounded-circle img-cover me-2 me-md-3" 
+          style="width: 48px; height: 48px;">髒兮兮的家
+        </td>
+        <td class=" text-end text-end">
+          <i class="fa-brands fa-ethereum"></i>
+          502.31
+        </td>
+        <td class="text-success d-none d-md-table-cell text-end">+13.49%</td>
+        <td class="text-success d-none d-md-table-cell text-end">+50.23</td>
+        <td class="d-none d-md-table-cell text-end">
+          <i class="fa-brands fa-ethereum"></i>
+          2.90
+        </td>
+        <td class="d-none d-md-table-cell text-end">32.1K</td>
+        <td class="d-none d-md-table-cell text-end">1000</td>
+      </tr>
+      <!-- tr9 手機板 -->
+      <tr class="border-bottom d-md-none">
+        <td colspan="8" class="p-0">
+          <div class="collapse" id="collapseTr9">
+            <ul class="text-center p-3 row gy-3 justify-content-center">
+              <li class="col-4">
+                <p class="fs-7">24h%</p>
+                <p class="fs-4 text-success">+13.49%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">7d%</p>
+                <p class="fs-4 text-success">+50.23</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">地板價</p>
+                <p class="fs-4">
+                  <i class="fa-brands fa-ethereum"></i>
+                  2.90
+                </p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">擁有者</p>
+                <p class="fs-4">32.1K</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">作品數量</p>
+                <p class="fs-4">1000</p>
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+
+      <!-- tr10 -->
+      <tr class="ranking-item border-bottom triangle-br-plus" data-bs-toggle="collapse" data-bs-target="#collapseTr10">
+        <th scope="row" class="fs-3 text-center align-middle border-end">10</th>
+        <td><img src="./assets/images/art16.jpg" alt="Art16" class="rounded-circle img-cover me-2 me-md-3" 
+          style="width: 48px; height: 48px;">細胞小將
+        </td>
+        <td class=" text-end text-end">
+          <i class="fa-brands fa-ethereum"></i>
+          420.20
+        </td>
+        <td class="text-success d-none d-md-table-cell text-end">+54.49%</td>
+        <td class="text-danger d-none d-md-table-cell text-end">-12.43%</td>
+        <td class="d-none d-md-table-cell text-end">
+          <i class="fa-brands fa-ethereum"></i>
+          2.90
+        </td>
+        <td class="d-none d-md-table-cell text-end">32.1K</td>
+        <td class="d-none d-md-table-cell text-end">1000</td>
+      </tr>
+      <!-- tr10 手機板 -->
+      <tr class="border-bottom d-md-none">
+        <td colspan="8" class="p-0">
+          <div class="collapse" id="collapseTr10">
+            <ul class="text-center p-3 row gy-3 justify-content-center">
+              <li class="col-4">
+                <p class="fs-7">24h%</p>
+                <p class="fs-4 text-success">+54.49%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">7d%</p>
+                <p class="fs-4 text-danger">-12.43%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">地板價</p>
+                <p class="fs-4">
+                  <i class="fa-brands fa-ethereum"></i>
+                  2.90
+                </p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">擁有者</p>
+                <p class="fs-4">32.1K</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7">作品數量</p>
+                <p class="fs-4">1000</p>
+              </li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- </div> -->
+
+</section>

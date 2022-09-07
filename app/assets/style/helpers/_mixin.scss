@@ -1,0 +1,47 @@
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl: 1400px
+// );
+// rwd min-width
+@mixin respond-min($name) {
+  @each $breakpoint,$size in $grid-breakpoints {
+    @if $name == $breakpoint {
+      @media only screen and (min-width: $size) {
+        @content;
+      }
+    }
+    // for font-size (fs-md-*)
+    @if $name == $size {
+      @media only screen and (min-width: $size) {
+        @content;
+      }
+    }
+  }
+}
+// rwd font-size 改變字體大小
+@each $h,$fs in $font-sizes {
+  .fs-md-#{$h} {
+    @include respond-min(map-get($grid-breakpoints,md)){
+      font-size: $fs !important;
+    }
+  }
+  .fs-lg-#{$h} {
+    @include respond-min(map-get($grid-breakpoints,lg)){
+      font-size: $fs !important;
+    }
+  }
+  .fs-xl-#{$h} {
+    @include respond-min(map-get($grid-breakpoints,xl)){
+      font-size: $fs !important;
+    }
+  }
+  .fs-xxl-#{$h} {
+    @include respond-min(map-get($grid-breakpoints,xxl)){
+      font-size: $fs !important;
+    }
+  }
+}

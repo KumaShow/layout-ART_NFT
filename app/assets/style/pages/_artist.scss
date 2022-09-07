@@ -1,0 +1,33 @@
+.artist-img {
+  background: url("../images/artist01.jpg") no-repeat center center;
+  background-size: cover;
+  height: 213px;
+  @include respond-min(md) {
+    height: auto;
+  }
+}
+
+.art-works {
+  position: relative;
+  @include respond-min(lg) {
+    margin-bottom: 130px;
+    &__list {
+      position: absolute;
+      bottom: -300%;
+    }
+  }
+  @include respond-min(xl) {
+    margin-bottom: 160px;
+    &__list {
+      position: absolute;
+      bottom: -360%;
+    }
+  }
+  @include respond-min(xxl) {
+    margin-bottom: 200px;
+    &__list {
+      position: absolute;
+      bottom: -420%;
+    }
+  }
+}

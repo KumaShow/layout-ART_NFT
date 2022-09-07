@@ -1,0 +1,322 @@
+---
+title: 藝術品系列 | ART NFT
+layout: ./app/layout.ejs
+engine: ejs
+current: artworks
+---
+<!-- 作品介紹 -->
+<section class="container mb-6 mt-4 mt-md-6">
+  <div class="row g-4">
+    <!-- 左側圖片 -->
+    <div class="col-lg-6">
+      <div class="square-auto">
+        <img src="./assets/images/art21.jpg" alt="兩情相悅" class="square-img">
+      </div>
+    </div>
+    <!-- 右側標題 -->
+    <div class="col-lg-6">
+      <div class="card h-100">
+        <!-- 卡片上半 -->
+        <div class="pt-3 pb-4 pb-md-5 px-3 px-md-6 border-bottom">
+          <div class="d-md-flex align-items-center flex-row-reverse justify-content-between mb-3">
+            <div class="mb-2 mb-md-0">
+              <img src="./assets/images/artist01.jpg" alt="Artist01" class="rounded-circle img-cover me-3" style="width: 32px; height: 32px;">
+              <span>Michael</span>
+            </div>
+            <h2 class="fs-md-1 lh-base fw-bold">兩情相悅</h2>
+          </div>
+          <div class="d-flex justify-content-between align-items-end">
+            <div>
+              <p class="text-dark fs-7 mb-2">最高出價</p>
+              <div class="mb-2 mb-md-0 d-flex align-items-center">
+                <img src="./assets/images/user01.jpg" alt="User01" class="rounded-circle img-cover me-2" style="width: 32px; height: 32px;">
+                <i class="fa-solid fa-arrow-right me-2"></i>
+                <span>0.044Eth</span>
+              </div>
+            </div>
+
+            <div>
+              <a href="#!" class="btn btn-primary py-2 px-7 text-white border">出價</a>
+            </div>
+          </div>
+        </div>
+        <!-- 卡片下半 -->
+        <div class="pt-3 pb-4 pb-md-5 px-3 px-md-6 font-notoSans flex-fill">
+          <p class="mb-3">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+          <p class="mb-3">而且其中一隻竟然有梳油頭，不知道是不是有用定型液，他們感情真好，出門還會特別打扮，看著看著不禁思考，我怎麼會變這樣？</p>
+          <p>好羨慕啊，我也要有這樣兩情相悅的另一半。</p>
+        </div>
+      </div>
+    </div>
+    <!-- 屬性 -->
+    <div class="col-md-6">
+      <div class="card">      
+        <button class="btn btn-white filter-button text-black fw-bold border-bottom d-flex justify-content-between align-items-center p-3" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseAttribute" aria-expanded="false" aria-controls="collapseAttribute">
+          屬性
+          <i class="fa-solid fa-angle-up"></i>
+          <i class="fa-solid fa-angle-down d-none"></i>
+        </button>
+        <div class="collapse show" id="collapseAttribute">
+          <div class="py-4 px-3">
+            <p class="d-flex justify-content-between border-bottom border-light pb-2 mb-2">品種
+              <span class="text-dark">青藍金剛鸚鵡</span>
+            </p>
+            <p class="d-flex justify-content-between border-bottom border-light pb-2 mb-2">鳥的數量
+              <span class="text-dark">2隻</span>
+            </p>
+            <p class="d-flex justify-content-between border-bottom border-light pb-2 mb-2">是否有花草
+              <span class="text-dark">是</span>
+            </p>
+            <p class="d-flex justify-content-between">鳥的顏色
+              <span class="text-dark">藍色</span>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- 出價 -->
+    <div class="col-md-6">
+      <div class="card">      
+        <button class="btn btn-white filter-button text-black fw-bold border-bottom d-flex justify-content-between align-items-center p-3" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseBid" aria-expanded="false" aria-controls="collapseBid">
+          出價
+          <i class="fa-solid fa-angle-up"></i>
+          <i class="fa-solid fa-angle-down d-none"></i>
+        </button>
+        <div class="collapse show" id="collapseBid">
+          <div class="py-4 px-3">
+            <div class="bg-light d-flex mb-2">
+              <p class="py-2 px-3 text-center text-md-start flex-fill">價格</p>
+              <p class="py-2 px-3 text-center text-md-start flex-fill">期限</p>
+            </div>
+            <!-- 出價紀錄 -->
+            <div class="border-bottom border-light pb-2 mb-2">
+              <div class="d-flex justify-content-between">
+                <div class="mb-2 mb-md-0 d-flex align-items-center">
+                  <img src="./assets/images/artist03.jpg" alt="artist03" class="rounded-circle img-cover me-2" style="width: 32px; height: 32px;">
+                  <i class="fa-solid fa-arrow-right me-2"></i>
+                  <span>0.044Eth</span>
+                </div>
+                <span class="text-dark font-notoSans">3個月後</span>
+              </div>
+            </div>
+
+            <div class="border-bottom border-light pb-2 mb-2">
+              <div class="d-flex justify-content-between">
+                <div class="mb-2 mb-md-0 d-flex align-items-center">
+                  <img src="./assets/images/user02.jpg" alt="User02" class="rounded-circle img-cover me-2" style="width: 32px; height: 32px;">
+                  <i class="fa-solid fa-arrow-right me-2"></i>
+                  <span>0.054Eth</span>
+                </div>
+                <span class="text-dark font-notoSans">1個月後</span>
+              </div>
+            </div>
+
+            <div class="">
+              <div class="d-flex justify-content-between">
+                <div class="mb-2 mb-md-0 d-flex align-items-center">
+                  <img src="./assets/images/user03.jpg" alt="User03" class="rounded-circle img-cover me-2" style="width: 32px; height: 32px;">
+                  <i class="fa-solid fa-arrow-right me-2"></i>
+                  <span>0.044Eth</span>
+                </div>
+                <span class="text-dark font-notoSans">2週後</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 基本資訊 -->
+    <div class="col-md-6">
+      <div class="card">      
+        <button class="btn btn-white filter-button text-black fw-bold border-bottom d-flex justify-content-between align-items-center p-3" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseInfo" aria-expanded="false" aria-controls="collapseInfo">
+          基本資訊
+          <i class="fa-solid fa-angle-up"></i>
+          <i class="fa-solid fa-angle-down d-none"></i>
+        </button>
+        <div class="collapse show" id="collapseInfo">
+          <div class="py-4 px-3 font-notoSans">
+            <p class="d-flex justify-content-between border-bottom border-light pb-2 mb-2">擁有者
+              <span class="text-dark">0xa543x…1283</span>
+            </p>
+            <p class="d-flex justify-content-between border-bottom border-light pb-2 mb-2">代幣ID
+              <span class="text-dark">#1234</span>
+            </p>
+            <p class="d-flex justify-content-between border-light">合約地址
+              <span class="text-dark">青藍金剛鸚鵡</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 交易歷史 -->
+    <div class="col-md-6">
+      <div class="card">
+        <button class="btn btn-white filter-button text-black fw-bold border-bottom d-flex justify-content-between align-items-center p-3" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseHistory" aria-expanded="false" aria-controls="collapseHistory">
+          交易歷史
+          <i class="fa-solid fa-angle-up"></i>
+          <i class="fa-solid fa-angle-down d-none"></i>
+        </button>
+        <div class="collapse show" id="collapseHistory">
+          <div class="py-4 px-3">
+            <table class="table font-notoSans">
+              <thead class="table-light">
+                <tr>
+                  <th scope="col fw-normal">事件</th>
+                  <th scope="col fw-normal">價格</th>
+                  <th scope="col fw-normal">從</th>
+                  <th scope="col fw-normal">時間</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row fw-normal">上架</th>
+                  <td>2nb</td>
+                  <td>
+                    <div class="mb-2 mb-md-0">
+                      <img src="./assets/images/artist02.jpg" alt="Artist02" class="rounded-circle img-cover me-3" style="width: 32px; height: 32px;">
+                    </div>
+                  </td>
+                  <td>14小時前</td>
+                </tr>
+                <tr>
+                  <th scope="row fw-normal">出價</th>
+                  <td>2nb</td>
+                  <td>
+                    <div class="mb-2 mb-md-0">
+                      <img src="./assets/images/artist01.jpg" alt="Artist01" class="rounded-circle img-cover me-3" style="width: 32px; height: 32px;">
+                    </div>
+                  </td>
+                  <td>2週後</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Other 其餘作品 -->
+<section class="container">
+  <div class="d-flex justify-content-between align-items-center border-bottom mb-4 position-relative">
+    <h2 class="fs-1 mb-2 mb-md-3">Other
+      <span class="fw-bold fs-4 vertical-bottom d-none d-md-inline-block ms-3">其餘作品</span>
+    </h2>
+    <a href="artworks.html" class="btn-more border-0 hover-border position-absolute bottom-0 end-0">more</a>
+  </div>
+  <!-- swiperOther -->
+  <div class="swiperOther">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <div class="card border-0 bg-light">
+          <div class="p-2 p-md-3 p-lg-4 bg-white">
+            <div class="masonry__item position-relative">
+              <img src="./assets/images/art22.jpg" alt="群聚的小鳥們" class="masonry__img">
+              <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+              <!-- hover -->
+              <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-2 m-2">
+                <div class="d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <p class="mb-1 text-s">群聚的小鳥們</p>
+                    <span class="d-flex align-items-center">
+                      <i class="fa-brands fa-ethereum me-2"></i>
+                      300
+                    </span>
+                  </div>
+                  <div class="text-end">
+                    <a href="#!" class="btn-more">more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="mt-2 p-2 p-md-0 py-md-3 fs-7 fs-md-6 fw-bold border-bottom-md text-start">群聚的小鳥們</p>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="card border-0 bg-light">
+          <div class="p-2 p-md-3 p-lg-4 bg-white">
+            <div class="masonry__item position-relative">
+              <img src="./assets/images/art27.jpg" alt="我真的受傷了" class="masonry__img">
+              <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+              <!-- hover -->
+              <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-2 m-2">
+                <div class="d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <p class="mb-1 text-start">我真的受傷了</p>
+                    <span class="d-flex align-items-center">
+                      <i class="fa-brands fa-ethereum me-2"></i>
+                      300
+                    </span>
+                  </div>
+                  <div class="text-end">
+                    <a href="#!" class="btn-more">more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="mt-2 p-2 p-md-0 py-md-3 fs-7 fs-md-6 fw-bold border-bottom-md text-start">我真的受傷了</p>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="card border-0 bg-light">
+          <div class="p-2 p-md-3 p-lg-4 bg-white">
+            <div class="masonry__item position-relative">
+              <img src="./assets/images/art20.jpg" alt="這兩隻也太像企鵝了吧" class="masonry__img ">
+              <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+              <!-- hover -->
+              <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-2 m-2">
+                <div class="d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <p class="mb-1 text-start">這兩隻也太像企鵝了吧</p>
+                    <span class="d-flex align-items-center">
+                      <i class="fa-brands fa-ethereum me-2"></i>
+                      300
+                    </span>
+                  </div>
+                  <div class="text-end">
+                    <a href="#!" class="btn-more">more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="mt-2 p-2 p-md-0 py-md-3 fs-7 fs-md-6 fw-bold border-bottom-md text-start">這兩隻也太像企鵝了吧</p>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="card border-0 bg-light">
+          <div class="p-2 p-md-3 p-lg-4 bg-white">
+            <div class="masonry__item position-relative">
+              <img src="./assets/images/art22.jpg" alt="群聚囉～小鳥" class="masonry__img">
+              <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+              <!-- hover -->
+              <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-2 m-2">
+                <div class="d-flex flex-column justify-content-between">
+                  <div>
+                    <p class="mb-1 text-start">群聚囉～小鳥</p>
+                    <span class="d-flex align-items-center">
+                      <i class="fa-brands fa-ethereum me-2"></i>
+                      300
+                    </span>
+                  </div>
+                  <div class="text-end">
+                    <a href="#!" class="btn-more">more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="mt-2 p-2 p-md-0 py-md-3 fs-7 fs-md-6 fw-bold border-bottom-md text-start">群聚囉～小鳥</p>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>

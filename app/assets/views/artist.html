@@ -1,0 +1,392 @@
+---
+title: 藝術家介紹 | ART NFT
+layout: ./app/layout.ejs
+engine: ejs
+current: artist
+---
+
+<section class="mt-4 mb-6 mt-md-6 mb-md-11">
+  <div class="container"> 
+    <div class="row">
+      <div class="col-lg-9 mb-3 mb-lg-0">
+        <div class="card p-0">
+          <div class="row g-0">
+            <!-- 左邊藝術家圖片 -->
+            <div class="col-md-5 artist-img"></div>
+            <div class="col-md-7">
+              <div class="card-body py-4 px-3 p-lg-4 pb-lg-5">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="card-title mb-2 fs-md-1">Michael</h3>
+                  <ul class="d-flex">
+                    <li class="me-2">
+                      <a href="#!" class="link-black">
+                        <i class="fa-brands fa-discord"></i>
+                      </a>
+                    </li>
+                    <li class="me-2">
+                      <a href="#!" class="link-black">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="me-2">
+                      <a href="#!" class="link-black">
+                        <i class="fa-solid fa-globe"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#!" class="link-black">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <h4 class="card-subTitle mb-4">0x3ya666…88ef</h4>
+                <p class="card-text font-notoSans">Michael自小在山林長大，能夠與花草樹木大自然進行靈體溝通，創作題材常見大山、大水、花草與樹木，從日常生活出發，擁有個⼈獨樹⼀格的創作風格，作品觸及靈魂深處、探索未知宇宙，透過與大自然的溝通，探討著存在的本質。​</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 右側價格表 -->
+      <div class="col-lg-3">
+        <ul class="border bg-white lh-1">
+          <li class="d-flex justify-content-between align-items-center py-3 px-4 border-bottom">
+            <p>販售中</p>
+            <p class="fs-2">168</p>
+          </li>
+          <li class="d-flex justify-content-between align-items-center py-3 px-4 border-bottom">
+            <p>地板價格</p>
+            <p class="fs-2">0.6 ETH</p>
+          </li>
+          <li class="d-flex justify-content-between align-items-center py-3 px-4 border-bottom">
+            <p>7 日成交</p>
+            <p class="fs-2">8.8 ETH</p>
+          </li>
+          <li class="d-flex justify-content-between align-items-center py-3 px-4">
+            <p>30 日成交</p>
+            <p class="fs-2">23.1 ETH</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Nav tab 區 -->
+<section class="mb-6 mb-md-11">
+  <div class="container">
+    <ul class="nav nav-tabs mb-4 mb-md-6" id="myTab" role="tablist">
+      <!-- 收藏品 -->
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active fs-2 fs-lg-1 lh-1" id="collection-tab" data-bs-toggle="tab" data-bs-target="#collection" type="button" role="tab" aria-controls="collection" aria-selected="false">Collection
+          <span class="fs-4 fw-bold lh-sm d-none d-md-inline-block">收藏品</span>
+        </button>
+      </li>
+      <!-- 系列作品 -->
+      <li class="nav-item" role="presentation">
+        <button class="nav-link fs-2 fs-lg-1 lh-1" id="artWorks-tab" data-bs-toggle="tab" data-bs-target="#artWorks" type="button" role="tab" aria-controls="artWorks" aria-selected="true">Art Works
+          <span class="fs-4 fw-bold lh-sm d-none d-md-inline-block">系列作品</span>
+        </button>
+      </li>
+      
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <!-- Art Works tab -->
+      <div class="tab-pane fade" id="artWorks" role="tabpanel" aria-labelledby="artWorks-tab">
+        <!-- Art Works - 追求者送我的花 -->
+        <div class="card border triangle-tl-black triangle-tr-black py-5 px-3 mb-3 mb-lg-12">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-1"></div>
+              <div class="col-lg-10">
+                <h3 class="fw-bold mb-3">追求者送我的花</h3>
+                <div class="row justify-content-between art-works">
+                  <p class="col-lg-9 mb-4">我又沒有特別喜歡花，為什麼不給我現金就好，擺在那也不知道要幹嘛，只好畫起來看有沒有人要買，阿不然如果真的喜歡我，把這些都買回去八。</p>
+                  <div class="col-lg-3 d-none d-lg-block text-center">
+                    <a href="artworks.html" class="btn-more">more</a>
+                  </div>
+                  <ul class="row art-works__list g-2 align-items-center text-center mb-3">
+                    <li class="col-md-6 col-lg-3 ">
+                      <div class="square-auto border-10 border border-black">
+                        <img src="./assets/images/art28.jpg" alt="art28" class="square-img">
+                      </div>
+                    </li>
+                    <li class="col-md-6 col-lg-3  d-none d-md-block">
+                      <div class="square-auto border-10 border border-black">
+                        <img src="./assets/images/art13.jpg" alt="art13" class="square-img">
+                      </div>
+                    </li>
+                    <li class="col-md-6 col-lg-3  d-none d-md-block">
+                      <div class="square-auto border-10 border border-black">
+                        <img src="./assets/images/art14.jpg" alt="art14" class="square-img">
+                      </div>
+                    </li>
+                    <li class="col-md-6 col-lg-3  d-none d-md-block">
+                      <div class="square-auto border-10 border border-black">
+                        <img src="./assets/images/art18.jpg" alt="art18" class="square-img">
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                
+                
+                <div class="text-center d-lg-none">
+                  <a href="artworks.html" class="btn-more">more</a>
+                </div>
+              </div>
+              <div class="col-lg-1"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Art Works - 我家窗前的鳥 -->
+        <div class="card border triangle-tl-black triangle-tr-black py-5 px-3 mb-lg-12">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-1"></div>
+              <div class="col-lg-10">
+                <h3 class="fw-bold mb-3">我家窗前的鳥</h3>
+                <div class="row justify-content-between art-works">
+                  <p class="col-lg-9 mb-4">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+                  <div class="col-lg-3 d-none d-lg-block text-center">
+                    <a href="artworks.html" class="btn-more">more</a>
+                  </div>
+                  <ul class="row art-works__list g-2 align-items-center text-center mb-3">
+                    <li class="col-md-6 col-lg-3">
+                      <div class="square-auto border-10 border border-black">
+                        <img src="./assets/images/art27.jpg" alt="art27" class="square-img">
+                      </div>
+                    </li>
+                    <li class="col-md-6 col-lg-3 d-none d-md-block">
+                      <div class="square-auto border-10 border border-black">
+                        <img src="./assets/images/art20.jpg" alt="art13" class="square-img">
+                      </div>
+                    </li>
+                    <li class="col-md-6 col-lg-3 d-none d-md-block">
+                      <div class="square-auto border-10 border border-black">
+                        <img src="./assets/images/art23.jpg" alt="art14" class="square-img">
+                      </div>
+                    </li>
+                    <li class="col-md-6 col-lg-3 d-none d-md-block">
+                      <div class="square-auto border-10 border border-black">
+                        <img src="./assets/images/art24.jpg" alt="art18" class="square-img">
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                
+                
+  
+                <div class="text-center d-lg-none">
+                  <a href="artworks.html" class="btn-more">more</a>
+                </div>
+              </div>
+              <div class="col-lg-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 因masonry載入問題，改為先顯示collection -->
+      <!-- Collection tab -->
+      <div class="tab-pane fade show active" id="collection" role="tabpanel" aria-labelledby="collection-tab">
+        <div class="container masonry">
+          <div class="row masonry" data-masonry='{"percentPosition": true }'>
+            <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+              <div class="card border-0 bg-light">
+                <div class="p-2 p-md-4 bg-white">
+                  <div class="masonry__item position-relative">
+                    <img src="./assets/images/art09.jpg" alt="區塊戀-他的私生活" class="img-fluid card-img-top masonry__img">
+                    <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
+                      <div class="d-flex flex-column justify-content-between h-100">
+                        <div>
+                          <p class="mb-2">區塊戀-他的私生活</p>
+                          <span class="d-flex align-items-center">
+                            <i class="fa-brands fa-ethereum me-2"></i>
+                            300
+                          </span>
+                        </div>
+                        <div class="text-end">
+                          <a href="#!" class="btn-more">more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">區塊戀-他的私生活</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+              <div class="card border-0 bg-light">
+                <div class="p-2 p-md-4 bg-white">
+                  <div class="masonry__item position-relative">
+                    <img src="./assets/images/art10.jpg" alt="夏娃的醜聞" class="img-fluid card-img-top masonry__img">
+                    <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
+                      <div class="d-flex flex-column justify-content-between h-100">
+                        <div>
+                          <p class="mb-2">夏娃的醜聞</p>
+                          <span class="d-flex align-items-center">
+                            <i class="fa-brands fa-ethereum me-2"></i>
+                            300
+                          </span>
+                        </div>
+                        <div class="text-end">
+                          <a href="#!" class="btn-more">more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">夏娃的醜聞</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+              <div class="card border-0 bg-light">
+                <div class="p-2 p-md-4 bg-white">
+                  <div class="masonry__item position-relative">
+                    <img src="./assets/images/art03.jpg" alt="十分鐘就到" class="img-fluid card-img-top masonry__img">
+                    <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
+                      <div class="d-flex flex-column justify-content-between h-100">
+                        <div>
+                          <p class="mb-2">十分鐘就到</p>
+                          <span class="d-flex align-items-center">
+                            <i class="fa-brands fa-ethereum me-2"></i>
+                            300
+                          </span>
+                        </div>
+                        <div class="text-end">
+                          <a href="#!" class="btn-more">more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">十分鐘就到</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+              <div class="card border-0 bg-light">
+                <div class="p-2 p-md-4 bg-white">
+                  <div class="masonry__item position-relative">
+                    <img src="./assets/images/art11.jpg" alt="沒有人愛我" class="img-fluid card-img-top masonry__img">
+                    <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
+                      <div class="d-flex flex-column justify-content-between h-100">
+                        <div>
+                          <p class="mb-2">沒有人愛我</p>
+                          <span class="d-flex align-items-center">
+                            <i class="fa-brands fa-ethereum me-2"></i>
+                            300
+                          </span>
+                        </div>
+                        <div class="text-end">
+                          <a href="#!" class="btn-more">more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">沒有人愛我
+
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+              <div class="card border-0 bg-light">
+                <div class="p-2 p-md-4 bg-white">
+                  <div class="masonry__item position-relative">
+                    <img src="./assets/images/art12.jpg" alt="不哭不哭眼淚是珍珠" class="img-fluid card-img-top masonry__img">
+                    <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
+                      <div class="d-flex flex-column justify-content-between h-100">
+                        <div>
+                          <p class="mb-2">不哭不哭眼淚是珍珠</p>
+                          <span class="d-flex align-items-center">
+                            <i class="fa-brands fa-ethereum me-2"></i>
+                            300
+                          </span>
+                        </div>
+                        <div class="text-end">
+                          <a href="#!" class="btn-more">more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">不哭不哭眼淚是珍珠</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+              <div class="card border-0 bg-light">
+                <div class="p-2 p-md-4 bg-white">
+                  <div class="masonry__item position-relative">
+                    <img src="./assets/images/art02.jpg" alt="藍色啤酒海" class="img-fluid card-img-top masonry__img">
+                    <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
+                      <div class="d-flex flex-column justify-content-between h-100">
+                        <div>
+                          <p class="mb-2">藍色啤酒海</p>
+                          <span class="d-flex align-items-center">
+                            <i class="fa-brands fa-ethereum me-2"></i>
+                            300
+                          </span>
+                        </div>
+                        <div class="text-end">
+                          <a href="#!" class="btn-more">more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">藍色啤酒海</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+              <div class="card border-0 bg-light">
+                <div class="p-2 p-md-4 bg-white">
+                  <div class="masonry__item position-relative">
+                    <img src="./assets/images/art04.jpg" alt="我這樣有美嗎" class="img-fluid card-img-top masonry__img">
+                    <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
+                      <div class="d-flex flex-column justify-content-between h-100">
+                        <div>
+                          <p class="mb-2">我這樣有美嗎</p>
+                          <span class="d-flex align-items-center">
+                            <i class="fa-brands fa-ethereum me-2"></i>
+                            300
+                          </span>
+                        </div>
+                        <div class="text-end">
+                          <a href="#!" class="btn-more">more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">我這樣有美嗎</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+              <div class="card border-0 bg-light">
+                <div class="p-2 p-md-4 bg-white">
+                  <div class="masonry__item position-relative">
+                    <img src="./assets/images/art27.jpg" alt="我真的受傷了" class="img-fluid card-img-top masonry__img">
+                    <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
+                      <div class="d-flex flex-column justify-content-between h-100">
+                        <div>
+                          <p class="mb-2">我真的受傷了</p>
+                          <span class="d-flex align-items-center">
+                            <i class="fa-brands fa-ethereum me-2"></i>
+                            300
+                          </span>
+                        </div>
+                        <div class="text-end">
+                          <a href="#!" class="btn-more">more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">我真的受傷了</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

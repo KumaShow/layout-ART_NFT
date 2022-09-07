@@ -1,0 +1,411 @@
+---
+title: 藝術品系列 | ART NFT
+layout: ./app/layout.ejs
+engine: ejs
+current: artworks
+---
+<div class="container mb-6 mb-lg-11 mt-4 mt-md-6">
+  <!-- filter 背景 -->
+  <div id="filterBackdrop"></div>
+  <div class="row">
+    <!-- 左側篩選 -->
+    <aside class="col-lg-3 align-self-baseline p-0 border bg-white d-none d-lg-block" id="filterModal">
+      <!-- 篩選條件標題 -->
+      <div class="sticky-top bg-white d-lg-none">
+        <div class="text-center p-3">
+          <h4 class="position-relative">篩選條件
+            <a href="#!" class="position-absolute end-0">
+              <i class="fa-solid fa-xmark text-black fw-bold fs-4" id="btnFilterClose" style="width: 18px; height: 18px;"></i>
+            </a>
+          </h4>
+        </div>
+        <hr>
+      </div>
+      <!-- 網路 -->
+      <div class="p-4">
+        <a class="filter-button text-black fw-bold d-flex justify-content-between align-items-center pb-3" data-bs-toggle="collapse" href="#collapseNetwork" role="button" aria-expanded="false" aria-controls="collapseNetwork">網路
+          <i class="fa-solid fa-angle-up"></i>
+          <i class="fa-solid fa-angle-down d-none"></i>
+        </a>
+        <ul class="collapse show" id="collapseNetwork">
+          <li>
+            <label for="ethereum" class="d-flex justify-content-between align-items-center">以太坊
+              <input type="checkbox" name="ethereum" id="ethereum">
+            </label>
+          </li>
+          <li>
+            <label for="bnbchain" class="font-notoSans d-flex justify-content-between align-items-center">BNB 智能鏈
+              <input type="checkbox" name="bnbchain" id="bnbchain">
+            </label>
+          </li>
+        </ul>
+      </div>
+      <hr>
+      <!-- 狀態 -->
+      <div class="p-4">
+        <a class="filter-button text-black fw-bold d-flex justify-content-between align-items-center pb-3" data-bs-toggle="collapse" href="#collapseState" role="button" aria-expanded="false" aria-controls="collapseState">狀態
+          <i class="fa-solid fa-angle-up"></i>
+          <i class="fa-solid fa-angle-down d-none"></i>
+        </a>
+        <ul class="collapse show" id="collapseState">
+          <li>
+            <label for="show-only" class="d-flex justify-content-between align-items-center">僅展示
+              <input type="checkbox" name="show-only" id="show-only">
+            </label>
+          </li>
+          <li>
+            <label for="for-sale" class="d-flex justify-content-between align-items-center">拍賣中
+              <input type="checkbox" name="for-sale" id="for-sale">
+            </label>
+          </li>
+        </ul>
+      </div>
+      <hr>
+      <!-- 價格 -->
+      <div class="p-4">
+        <a class="filter-button text-black fw-bold d-flex justify-content-between align-items-center pb-3" data-bs-toggle="collapse" href="#collapsePrice" role="button" aria-expanded="false" aria-controls="collapsePrice">價格
+          <i class="fa-solid fa-angle-up"></i>
+          <i class="fa-solid fa-angle-down d-none"></i>
+        </a>
+        <div class="collapse show" id="collapsePrice">
+          <div class="d-flex align-items-center">
+            <select name="price" id="price" class="font-notoSans me-2 px-1" style="width: 30%; height: 40px;">
+              <option value="eth">ETH</option>
+            </select>
+            <input type="number" class="font-notoSans me-2" style="width: 30%; height: 40px;">
+            <span>-</span>
+            <input type="number" class="font-notoSans ms-2" style="width: 30%; height: 40px;">
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!-- 屬性 -->
+      <div class="p-4">
+        <p class="text-dark mb-4">屬性</p>
+        <!-- 品種 -->
+        <div class="mb-4">
+          <a class="filter-button text-black fw-bold d-flex justify-content-between align-items-center pb-3" data-bs-toggle="collapse" href="#collapseVariety" role="button" aria-expanded="false" aria-controls="collapseVariety">品種
+            <i class="fa-solid fa-angle-up"></i>
+            <i class="fa-solid fa-angle-down d-none"></i>
+          </a>
+          <ul class="collapse show" id="collapseVariety">
+            <li>
+              <label for="starling" class="d-flex justify-content-between align-items-center">八哥
+                <input type="checkbox" name="starling" id="starling">
+              </label>
+            </li>
+            <li>
+              <label for="budgerigar" class="d-flex justify-content-between align-items-center">虎皮鸚鵡
+                <input type="checkbox" name="budgerigar" id="budgerigar">
+              </label>
+            </li>
+            </li>
+            <li>
+              <label for="waxwing" class="d-flex justify-content-between align-items-center">太平鳥
+                <input type="checkbox" name="waxwing" id="waxwing">
+              </label>
+            </li>
+            </li>
+            <li>
+              <label for="hwamei" class="d-flex justify-content-between align-items-center">畫眉鳥
+                <input type="checkbox" name="hwamei" id="hwamei">
+              </label>
+            </li>
+          </ul>
+        </div>
+        <!-- 鳥的數量 -->
+        <div class="mb-4">
+          <a class="filter-button text-black fw-bold d-flex justify-content-between align-items-center pb-3" data-bs-toggle="collapse" href="#collapseBirdNum" role="button" aria-expanded="false" aria-controls="collapseBirdNum">鳥的數量
+            <i class="fa-solid fa-angle-up"></i>
+            <i class="fa-solid fa-angle-down d-none"></i>
+          </a>
+          <ul class="collapse show" id="collapseBirdNum">
+            <li>
+              <label for="bird-1" class="d-flex justify-content-between align-items-center font-notoSans">1
+                <input type="checkbox" name="bird-1" id="bird-1">
+              </label>
+            </li>
+            <li>
+              <label for="bird-2" class="d-flex justify-content-between align-items-center font-notoSans">2
+                <input type="checkbox" name="bird-2" id="bird-2">
+              </label>
+            </li>
+            <li>
+              <label for="bird-3" class="d-flex justify-content-between align-items-center font-notoSans">3
+                <input type="checkbox" name="bird-3" id="bird-3">
+              </label>
+            </li>
+          </ul>
+        </div>
+        <!-- 是否有花草 -->
+        <div class="mb-4">
+          <a class="filter-button text-black fw-bold d-flex justify-content-between align-items-center pb-3" data-bs-toggle="collapse" href="#collapseIsFlower" role="button" aria-expanded="false" aria-controls="collapseIsFlower">是否有花草
+            <i class="fa-solid fa-angle-up"></i>
+            <i class="fa-solid fa-angle-down d-none"></i>
+          </a>
+          <ul class="collapse show" id="collapseIsFlower">
+            <li>
+              <label for="flower-true" class="d-flex justify-content-between align-items-center">有
+                <input type="checkbox" name="flower-true" id="flower-true">
+              </label>
+            </li>
+            <li>
+              <label for="flower-false" class="d-flex justify-content-between align-items-center">無
+                <input type="checkbox" name="flower-false" id="flower-false">
+              </label>
+            </li>
+          </ul>
+        </div>
+        <!-- 鳥的顏色 -->
+        <div class="mb-4">
+          <a class="filter-button text-black fw-bold d-flex justify-content-between align-items-center pb-3" data-bs-toggle="collapse" href="#collapseBirdColor" role="button" aria-expanded="false" aria-controls="collapseBirdColor">鳥的顏色
+            <i class="fa-solid fa-angle-up"></i>
+            <i class="fa-solid fa-angle-down d-none"></i>
+          </a>
+          <ul class="collapse show" id="collapseBirdColor">
+            <li>
+              <label for="bird-black" class="d-flex justify-content-between align-items-center">黑色
+                <input type="checkbox" name="bird-black" id="bird-black">
+              </label>
+            </li>
+            <li>
+              <label for="bird-green" class="d-flex justify-content-between align-items-center">綠色
+                <input type="checkbox" name="bird-green" id="bird-green">
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-lg-none position-sticky bottom-0 start-0 w-100">
+        <a href="#!" class="btn btn-primary d-block text-white border" id="btnFilterCheck">確認</a>
+      </div>
+    </aside>
+    <!-- 右側主區塊 -->
+    <section class="col-lg-9 position-relative">
+      <!-- 系列名稱 -->
+      <div class="row align-items-center">
+        <!-- 標題 -->
+        <div class="mb-1">
+          <img src="./assets/images/artist01.jpg" alt="Artist01" class="rounded-circle img-cover me-3" style="width: 32px; height: 32px;">
+          <span>Michael</span>
+        </div>
+        <div class="col-lg-7">
+          <div>
+            <h2 class="fw-bold mb-2 lh-base">我家外面的鳥</h2>
+            <p class="mb-3">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+          </div>
+        </div>
+        <!-- 價格表 -->
+        <div class="col-lg-5 mx-n12">
+          <ul class="h-50 border bg-white row mb-6">
+            <li class="py-3 px-2 text-center col-3 pseudo-border-end-tp">
+              <p>項目</p>
+              <p>6.4 k</p>
+            </li>
+            <li class="py-3 px-2 text-center col-3 pseudo-border-end-tp">
+              <p>擁有者</p>
+              <p>2.5 k</p>
+            </li>
+            <li class="py-3 px-2 text-center col-3 pseudo-border-end-tp">
+              <p>底價</p>
+              <p>
+                <i class="fa-brands fa-ethereum me-2"></i>
+                1.38 k
+              </p>
+            </li>
+            <li class="py-3 px-2 text-center col-3">
+              <p>總額</p>
+              <p>2.8 k</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 最新上架 button -->
+      <div class="d-lg-block text-end mb-4 mb-lg-6">
+        <a href="#!" class="btn bg-white link-black rounded-0 py-2 px-5 border">
+          最新上架
+          <i class="fa-solid fa-sort"></i>
+        </a>
+      </div>
+      <!-- 瀑布流 -->
+      <div class="row masonry" data-masonry='{"percentPosition": true }'>
+
+        <div class="col-6 col-lg-4 mb-3 mb-md-7">
+          <div class="card border-0 bg-light">
+            <!-- 圖片區塊 -->
+            <div class="p-2 p-md-3 p-lg-4 bg-white">
+              <div class="masonry__item position-relative">
+                <img src="./assets/images/art20.jpg" alt="這兩隻也太像企鵝了吧" class="masonry__img">
+                <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+                <!-- hover -->
+                <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-2 m-2">
+                  <div class="d-flex flex-column justify-content-between h-100">
+                    <div>
+                      <p class="mb-1">這兩隻也太像企鵝了吧</p>
+                      <span class="d-flex align-items-center">
+                        <i class="fa-brands fa-ethereum me-2"></i>
+                        300
+                      </span>
+                    </div>
+                    <div class="text-center">
+                      <a href="artworks-detail.html" class="btn-more">more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 標題 -->
+            <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">這兩隻也太像企鵝了吧</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-4 mb-3 mb-md-7">
+          <div class="card border-0 bg-light">
+            <!-- 圖片區塊 -->
+            <div class="p-2 p-md-3 p-lg-4 bg-white">
+              <div class="masonry__item position-relative">
+                <img src="./assets/images/art21.jpg" alt="兩情相悅" class="masonry__img">
+                <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+                <!-- hover -->
+                <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-2 m-2">
+                  <div class="d-flex flex-column justify-content-between h-100">
+                    <div>
+                      <p class="mb-1">兩情相悅</p>
+                      <span class="d-flex align-items-center">
+                        <i class="fa-brands fa-ethereum me-2"></i>
+                        300
+                      </span>
+                    </div>
+                    <div class="text-end">
+                      <a href="artworks-detail.html" class="btn-more">more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">兩情相悅</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-4 mb-3 mb-md-7">
+          <div class="card border-0 bg-light">
+            <!-- 圖片區塊 -->
+            <div class="p-2 p-md-3 p-lg-4 bg-white">
+              <div class="masonry__item position-relative">
+                <img src="./assets/images/art22.jpg" alt="群聚的小鳥們" class="masonry__img">
+                <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+                <!-- hover -->
+                <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-2 m-2">
+                  <div class="d-flex flex-column justify-content-between h-100">
+                    <div>
+                      <p class="mb-1">群聚的小鳥們</p>
+                      <span class="d-flex align-items-center">
+                        <i class="fa-brands fa-ethereum me-2"></i>
+                        300
+                      </span>
+                    </div>
+                    <div class="text-end">
+                      <a href="#!" class="btn-more">more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">群聚的小鳥們</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-4 mb-3 mb-md-7">
+          <div class="card border-0 bg-light">
+            <!-- 圖片區塊 -->
+            <div class="p-2 p-md-3 p-lg-4 bg-white">
+              <div class="masonry__item position-relative">
+                <img src="./assets/images/art23.jpg" alt="與你分享的快樂勝過獨自擁有" class="masonry__img">
+                <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+                <!-- hover -->
+                <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-2 m-2">
+                  <div class="d-flex flex-column justify-content-between h-100">
+                    <div>
+                      <p class="mb-1">與你分享的快樂勝過獨自擁有</p>
+                      <span class="d-flex align-items-center">
+                        <i class="fa-brands fa-ethereum me-2"></i>
+                        300
+                      </span>
+                    </div>
+                    <div class="text-end">
+                      <a href="#!" class="btn-more">more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">與你分享的快樂勝過獨自擁有
+  
+            </p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-4 mb-3 mb-md-7">
+          <div class="card border-0 bg-light">
+            <!-- 圖片區塊 -->
+            <div class="p-2 p-md-3 p-lg-4 bg-white">
+              <div class="masonry__item position-relative">
+                <img src="./assets/images/art24.jpg" alt="會唱metal的鳥" class="masonry__img">
+                <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+                <!-- hover -->
+                <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-2 m-2">
+                  <div class="d-flex flex-column justify-content-between h-100">
+                    <div>
+                      <p class="mb-1">會唱metal的鳥</p>
+                      <span class="d-flex align-items-center">
+                        <i class="fa-brands fa-ethereum me-2"></i>
+                        300
+                      </span>
+                    </div>
+                    <div class="text-end">
+                      <a href="#!" class="btn-more">more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">會唱metal的鳥</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-4 mb-3 mb-md-7">
+          <div class="card border-0 bg-light">
+            <!-- 圖片區塊 -->
+            <div class="p-2 p-md-3 p-lg-4 bg-white">
+              <div class="masonry__item position-relative">
+                <img src="./assets/images/art25.jpg" alt="一大一小兩個恰恰好" class="masonry__img">
+                <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+                <!-- hover -->
+                <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-2 m-2">
+                  <div class="d-flex flex-column justify-content-between h-100">
+                    <div>
+                      <p class="mb-1">一大一小兩個恰恰好</p>
+                      <span class="d-flex align-items-center">
+                        <i class="fa-brands fa-ethereum me-2"></i>
+                        300
+                      </span>
+                    </div>
+                    <div class="text-end">
+                      <a href="#!" class="btn-more">more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">一大一小兩個恰恰好</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- 手機版 篩選按鈕 -->
+<a href="#!" onclick="btnFilter()" class="d-lg-none btn btn-black rounded-0 py-2 px-5 border position-fixed bottom-0 start-50 translate-middle" id="btnFilter">
+  篩選條件
+</a>
