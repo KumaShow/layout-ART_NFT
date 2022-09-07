@@ -1,10 +1,152 @@
----
-title: NTF 藝術家交易平台
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<!-- 推 薦 系 列 -->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NTF 藝術家交易平台</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <header class="header border-bottom bg-light">
+      
+<!-- PC Nav -->
+<nav class="container d-flex justify-content-between align-items-center h-100">
+  <h1 class="p-3">
+    <a href="index.html" class="logo d-block">ART NFT</a>
+  </h1>
+
+  <div class="d-none d-md-flex align-items-center h-100">
+    <div class="border-start h-100 d-flex align-items-center px-5 position-relative">
+      <input type="text" class="bg-transparent w-220px h-100 outline-0 border-0 z-1" placeholder="搜尋作品名稱、藝術家名稱" name="search" id="search">
+      <label for="search" class="cursor-pointer">
+        <i class="fa-solid fa-magnifying-glass fw-bold fs-3" style="height: 24px"></i>
+      </label>
+    </div>
+    <ul class="d-flex align-items-center justify-content-between h-100">
+      <li class="border-start h-100">
+        <a href="explore.html" class="link-black fw-bold h-100 px-md-4 px-lg-5 d-flex align-items-center hover-bg-primary">
+          探索
+        </a>
+      </li>
+      <li class="border-start h-100">
+        <a href="marketRanking.html" class="link-black fw-bold h-100 px-md-4 px-lg-5 d-flex align-items-center hover-bg-primary">
+          市值
+        </a>
+      </li>
+      <li class="border-start h-100">
+        <a href="#!" class="link-black h-100 px-md-4 px-lg-5 d-flex align-items-center hover-bg-primary" data-bs-toggle="modal" data-bs-target="#accountModal">
+          <i class="fa-solid fa-wallet fw-bold fs-3" style="height: 24px"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- 手機 Nav -->
+  <div class="d-md-none" >
+    <!-- 搜尋按鈕 -->
+    <a href="#!" class="p-2" id="btnPhoneSearch">
+      <i class="fa-solid fa-magnifying-glass text-black fw-bold fs-6" style="width: 18px; height: 18px;"></i>
+    </a>
+    <!-- Menu 按鈕 -->
+    <a href="#!" class="p-2" id="btnPhoneMenu">
+      <i class="fa-solid fa-bars text-black fw-bold fs-5" id="btnNavMenu" style="width: 18px; height: 18px;"></i>
+      <i class="fa-solid fa-xmark text-black fw-bold fs-4 d-none" id="btnNavClose" style="width: 18px; height: 18px;"></i>
+    </a>
+  </div>
+</nav>
+<!-- 手機 Menu -->
+<div class="d-flex justify-content-center">
+  <ul class="text-center container d-none bg-white pb-4 menu-phone" id="phoneMenu">
+    <li class="border-bottom">
+      <a href="explore.html" class="text-black d-block fw-bold fs-5 py-4">探索</a>
+    </li>
+    <li>
+      <a href="marketRanking.html" class="text-black d-block fw-bold fs-5 py-4">市值</a>
+    </li>
+    <li class="">
+      <a href="#!" class="bg-primary text-white d-block fs-5 py-2 px-4 border" data-bs-toggle="modal" data-bs-target="#accountModal">連結錢包</a>
+    </li>
+  </ul>
+</div>
+
+<!-- 連結你的錢包 -->
+<!-- AccountModal-phone -->
+<div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered vh-100 h-md-auto">
+    <div class="modal-content rounded-0 h-100">
+      <div class="modal-header justify-content-center mb-4">
+        <h5 class="modal-title" id="accountModalLabel">連結你的錢包</h5>
+        <button type="button" class="btn-close d-md-none" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <ul class="row gx-2" id="accountList">
+            <li class="col-md-6 mb-2">
+              <a href="#!" class="d-flex align-items-center link-black border p-3 btn-hover-check">
+                <img src="./assets/images/logo/connect01.png" alt="MetaMask" width="16" height="16" class="me-3">
+                <p>MetaMask</p>
+              </a>
+            </li>
+            <li class="col-md-6 mb-2">
+              <a href="#!" class="d-flex align-items-center link-black border p-3 btn-hover-check">
+                <img src="./assets/images/logo/connect02.png" alt="Coinbase Wallet" width="16" height="16" class="me-3">
+                <p>Coinbase Wallet</p>
+              </a>
+            </li>
+            <li class="col-md-6 mb-2">
+              <a href="#!" class="d-flex align-items-center link-black border p-3 btn-hover-check">
+                <img src="./assets/images/logo/connect03.png" alt="WalletConnect" width="16" height="16" class="me-3">
+                <p>WalletConnect</p>
+              </a>
+            </li>
+            <li class="col-md-6 mb-2">
+              <a href="#!" class="d-flex align-items-center link-black border p-3 btn-hover-check">
+                <img src="./assets/images/logo/connect04.png" alt="Phantom" width="16" height="16" class="me-3">
+                <p>Phantom</p>
+              </a>
+            </li>
+            <li class="col-md-6 mb-2">
+              <a href="#!" class="d-flex align-items-center link-black border p-3 btn-hover-check">
+                <img src="./assets/images/logo/connect05.png" alt="Glow" width="16" height="16" class="me-3">
+                <p>Glow</p>
+              </a>
+            </li>
+            <li class="col-md-6 mb-2">
+              <a href="#!" class="d-flex align-items-center link-black border p-3 btn-hover-check">
+                <img src="./assets/images/logo/connect06.png" alt="Fortmatic" width="16" height="16" class="me-3">
+                <p>Fortmatic</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center border-0 mb-3">
+        <a href="#!" class="bg-primary text-white d-block fs-5 py-2 px-4 border w-100 w-lg-auto text-center">連結錢包</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Search Nav -->
+<nav class="container d-flex align-items-center justify-content-between pt-3 position-absolute top-0 start-0 end-0 bg-light d-none" id="searchPhoneNav">
+  <div class="d-flex align-items-center flex-fill">
+    <a href="#!" class="link-black" id="btnSearchArrow">
+      <i class="fa-solid fa-angle-left" style="width: 18px; height: 18px;"></i>
+    </a>
+    <input type="text" class="bg-transparent w-100 h-100 outline-0 border-0 z-1" placeholder="搜尋作品名稱、藝術家名稱" name="searchBarPhone" id="searchBarPhone">
+  </div>
+  <label for="searchBarPhone" class="cursor-pointer">
+    <i class="fa-solid fa-magnifying-glass text-black fw-bold fs-6" style="width: 18px; height: 18px;"></i>
+  </label>
+</nav>
+    </header>
+
+    <div class="main">
+      <!-- 推 薦 系 列 -->
 <section class="recommend mb-6 mb-lg-11 mt-md-6">
   <div class="container">
     <div class="row g-0">
@@ -620,3 +762,29 @@ current: index
     </div>
   </div>
 </section>
+    </div>
+
+    <footer class="footer text-center border-top pt-2 ">
+      <div class=" border-top border-4 py-4">
+        <p class="font-notoSans">© ART NFT. All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Masonry -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <!-- imagesLoaded -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/ffc1627107.js" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
