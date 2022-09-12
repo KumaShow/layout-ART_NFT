@@ -90,21 +90,19 @@
     }
   }
 }
-// 
+// 黑色三角形
 .triangle-br-black {
   @extend %triangle-br;
   &::after {
     background-color: #000;
   }
 }
-
 .triangle-tl-black {
   @extend %triangle-tl;
   &::before {
     background-color: #000;
   }
 }
-
 .triangle-tr-black {
   @extend %triangle-tr;
   &::after {
