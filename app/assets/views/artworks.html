@@ -7,6 +7,7 @@ current: artworks
 <div class="container mb-6 mb-lg-11 mt-4 mt-md-6">
   <!-- filter 背景 -->
   <div id="filterBackdrop"></div>
+  <!-- filter -->
   <div class="row">
     <!-- 左側篩選 -->
     <aside class="col-lg-3 align-self-baseline p-0 border bg-white d-none d-lg-block" id="filterModal">
@@ -99,12 +100,10 @@ current: artworks
                 <input type="checkbox" name="budgerigar" id="budgerigar">
               </label>
             </li>
-            </li>
             <li>
               <label for="waxwing" class="d-flex justify-content-between align-items-center">太平鳥
                 <input type="checkbox" name="waxwing" id="waxwing">
               </label>
-            </li>
             </li>
             <li>
               <label for="hwamei" class="d-flex justify-content-between align-items-center">畫眉鳥
@@ -228,9 +227,9 @@ current: artworks
         </a>
       </div>
       <!-- 瀑布流 -->
-      <div class="row masonry" data-masonry='{"percentPosition": true }'>
+      <ul class="row masonry" data-masonry='{"percentPosition": true }'>
 
-        <div class="col-6 col-lg-4 mb-3 mb-md-7">
+        <li class="col-6 col-lg-4 mb-3 mb-md-7">
           <div class="card border-0 bg-light">
             <!-- 圖片區塊 -->
             <div class="p-2 p-md-3 p-lg-4 bg-white">
@@ -255,11 +254,11 @@ current: artworks
               </div>
             </div>
             <!-- 標題 -->
-            <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">這兩隻也太像企鵝了吧</p>
+            <h3 class="fs-7 fs-md-6 font-notoSans p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">這兩隻也太像企鵝了吧</h3>
           </div>
-        </div>
+        </li>
 
-        <div class="col-6 col-lg-4 mb-3 mb-md-7">
+        <li class="col-6 col-lg-4 mb-3 mb-md-7">
           <div class="card border-0 bg-light">
             <!-- 圖片區塊 -->
             <div class="p-2 p-md-3 p-lg-4 bg-white">
@@ -283,11 +282,11 @@ current: artworks
                 </div>
               </div>
             </div>
-            <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">兩情相悅</p>
+            <h3 class="fs-7 fs-md-6 font-notoSans p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">兩情相悅</h3>
           </div>
-        </div>
+        </li>
 
-        <div class="col-6 col-lg-4 mb-3 mb-md-7">
+        <li class="col-6 col-lg-4 mb-3 mb-md-7">
           <div class="card border-0 bg-light">
             <!-- 圖片區塊 -->
             <div class="p-2 p-md-3 p-lg-4 bg-white">
@@ -311,11 +310,11 @@ current: artworks
                 </div>
               </div>
             </div>
-            <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">群聚的小鳥們</p>
+            <h3 class="fs-7 fs-md-6 font-notoSans p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">群聚的小鳥們</h3>
           </div>
-        </div>
+        </li>
 
-        <div class="col-6 col-lg-4 mb-3 mb-md-7">
+        <li class="col-6 col-lg-4 mb-3 mb-md-7">
           <div class="card border-0 bg-light">
             <!-- 圖片區塊 -->
             <div class="p-2 p-md-3 p-lg-4 bg-white">
@@ -339,13 +338,13 @@ current: artworks
                 </div>
               </div>
             </div>
-            <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">與你分享的快樂勝過獨自擁有
+            <h3 class="fs-7 fs-md-6 font-notoSans p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">與你分享的快樂勝過獨自h3有
   
             </p>
           </div>
-        </div>
+        </li>
 
-        <div class="col-6 col-lg-4 mb-3 mb-md-7">
+        <li class="col-6 col-lg-4 mb-3 mb-md-7">
           <div class="card border-0 bg-light">
             <!-- 圖片區塊 -->
             <div class="p-2 p-md-3 p-lg-4 bg-white">
@@ -369,11 +368,11 @@ current: artworks
                 </div>
               </div>
             </div>
-            <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">會唱metal的鳥</p>
+            <h3 class="fs-7 fs-md-6 font-notoSans p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">會唱metal的鳥</h3>
           </div>
-        </div>
+        </li>
 
-        <div class="col-6 col-lg-4 mb-3 mb-md-7">
+        <li class="col-6 col-lg-4 mb-3 mb-md-7">
           <div class="card border-0 bg-light">
             <!-- 圖片區塊 -->
             <div class="p-2 p-md-3 p-lg-4 bg-white">
@@ -397,10 +396,10 @@ current: artworks
                 </div>
               </div>
             </div>
-            <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">一大一小兩個恰恰好</p>
+            <h3 class="fs-7 fs-md-6 font-notoSans p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">一大一小兩個恰恰好</h3>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
   </div>
 </div>
