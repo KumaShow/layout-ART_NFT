@@ -9,6 +9,7 @@
 .masonry__item:hover {
   @include respond-min(md) {
     .masonry__img {
+      transition: .3s;
       filter: brightness(50%);
     }
     .masonry__detail {
