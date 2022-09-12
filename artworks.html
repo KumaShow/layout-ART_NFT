@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <header class="header border-bottom bg-light">
+    <header class="header border-bottom bg-light sticky-top">
       
 <!-- PC Nav -->
 <nav class="container d-flex justify-content-between align-items-center h-100">
@@ -58,7 +58,7 @@
     </a>
   </div>
 </nav>
-<!-- 手機 Menu -->
+<!-- 手機 Menu Button -->
 <div class="d-flex justify-content-center">
   <ul class="text-center container d-none bg-white pb-4 menu-phone" id="phoneMenu">
     <li class="border-bottom">
@@ -71,64 +71,6 @@
       <a href="#!" class="bg-primary text-white d-block fs-5 py-2 px-4 border" data-bs-toggle="modal" data-bs-target="#accountModal">連結錢包</a>
     </li>
   </ul>
-</div>
-
-<!-- 連結你的錢包 -->
-<!-- AccountModal-phone -->
-<div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered vh-100 h-md-auto">
-    <div class="modal-content rounded-0 h-100">
-      <div class="modal-header justify-content-center mb-4">
-        <h5 class="modal-title" id="accountModalLabel">連結你的錢包</h5>
-        <button type="button" class="btn-close d-md-none" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-          <ul class="row gx-2" id="accountList">
-            <li class="col-md-6 mb-2">
-              <a href="#!" class="d-flex align-items-center link-black border p-3 btn-hover-check">
-                <img src="./assets/images/logo/connect01.png" alt="MetaMask" width="16" height="16" class="me-3">
-                <p>MetaMask</p>
-              </a>
-            </li>
-            <li class="col-md-6 mb-2">
-              <a href="#!" class="d-flex align-items-center link-black border p-3 btn-hover-check">
-                <img src="./assets/images/logo/connect02.png" alt="Coinbase Wallet" width="16" height="16" class="me-3">
-                <p>Coinbase Wallet</p>
-              </a>
-            </li>
-            <li class="col-md-6 mb-2">
-              <a href="#!" class="d-flex align-items-center link-black border p-3 btn-hover-check">
-                <img src="./assets/images/logo/connect03.png" alt="WalletConnect" width="16" height="16" class="me-3">
-                <p>WalletConnect</p>
-              </a>
-            </li>
-            <li class="col-md-6 mb-2">
-              <a href="#!" class="d-flex align-items-center link-black border p-3 btn-hover-check">
-                <img src="./assets/images/logo/connect04.png" alt="Phantom" width="16" height="16" class="me-3">
-                <p>Phantom</p>
-              </a>
-            </li>
-            <li class="col-md-6 mb-2">
-              <a href="#!" class="d-flex align-items-center link-black border p-3 btn-hover-check">
-                <img src="./assets/images/logo/connect05.png" alt="Glow" width="16" height="16" class="me-3">
-                <p>Glow</p>
-              </a>
-            </li>
-            <li class="col-md-6 mb-2">
-              <a href="#!" class="d-flex align-items-center link-black border p-3 btn-hover-check">
-                <img src="./assets/images/logo/connect06.png" alt="Fortmatic" width="16" height="16" class="me-3">
-                <p>Fortmatic</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="modal-footer justify-content-center border-0 mb-3">
-        <a href="#!" class="bg-primary text-white d-block fs-5 py-2 px-4 border w-100 w-lg-auto text-center">連結錢包</a>
-      </div>
-    </div>
-  </div>
 </div>
 
 <!-- Search Nav -->
@@ -149,6 +91,7 @@
       <div class="container mb-6 mb-lg-11 mt-4 mt-md-6">
   <!-- filter 背景 -->
   <div id="filterBackdrop"></div>
+  <!-- filter -->
   <div class="row">
     <!-- 左側篩選 -->
     <aside class="col-lg-3 align-self-baseline p-0 border bg-white d-none d-lg-block" id="filterModal">
@@ -241,12 +184,10 @@
                 <input type="checkbox" name="budgerigar" id="budgerigar">
               </label>
             </li>
-            </li>
             <li>
               <label for="waxwing" class="d-flex justify-content-between align-items-center">太平鳥
                 <input type="checkbox" name="waxwing" id="waxwing">
               </label>
-            </li>
             </li>
             <li>
               <label for="hwamei" class="d-flex justify-content-between align-items-center">畫眉鳥
@@ -370,9 +311,9 @@
         </a>
       </div>
       <!-- 瀑布流 -->
-      <div class="row masonry" data-masonry='{"percentPosition": true }'>
+      <ul class="row masonry" data-masonry='{"percentPosition": true }'>
 
-        <div class="col-6 col-lg-4 mb-3 mb-md-7">
+        <li class="col-6 col-lg-4 mb-3 mb-md-7">
           <div class="card border-0 bg-light">
             <!-- 圖片區塊 -->
             <div class="p-2 p-md-3 p-lg-4 bg-white">
@@ -397,11 +338,11 @@
               </div>
             </div>
             <!-- 標題 -->
-            <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">這兩隻也太像企鵝了吧</p>
+            <h3 class="fs-7 fs-md-6 font-notoSans p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">這兩隻也太像企鵝了吧</h3>
           </div>
-        </div>
+        </li>
 
-        <div class="col-6 col-lg-4 mb-3 mb-md-7">
+        <li class="col-6 col-lg-4 mb-3 mb-md-7">
           <div class="card border-0 bg-light">
             <!-- 圖片區塊 -->
             <div class="p-2 p-md-3 p-lg-4 bg-white">
@@ -425,11 +366,11 @@
                 </div>
               </div>
             </div>
-            <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">兩情相悅</p>
+            <h3 class="fs-7 fs-md-6 font-notoSans p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">兩情相悅</h3>
           </div>
-        </div>
+        </li>
 
-        <div class="col-6 col-lg-4 mb-3 mb-md-7">
+        <li class="col-6 col-lg-4 mb-3 mb-md-7">
           <div class="card border-0 bg-light">
             <!-- 圖片區塊 -->
             <div class="p-2 p-md-3 p-lg-4 bg-white">
@@ -453,11 +394,11 @@
                 </div>
               </div>
             </div>
-            <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">群聚的小鳥們</p>
+            <h3 class="fs-7 fs-md-6 font-notoSans p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">群聚的小鳥們</h3>
           </div>
-        </div>
+        </li>
 
-        <div class="col-6 col-lg-4 mb-3 mb-md-7">
+        <li class="col-6 col-lg-4 mb-3 mb-md-7">
           <div class="card border-0 bg-light">
             <!-- 圖片區塊 -->
             <div class="p-2 p-md-3 p-lg-4 bg-white">
@@ -481,13 +422,13 @@
                 </div>
               </div>
             </div>
-            <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">與你分享的快樂勝過獨自擁有
+            <h3 class="fs-7 fs-md-6 font-notoSans p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">與你分享的快樂勝過獨自h3有
   
             </p>
           </div>
-        </div>
+        </li>
 
-        <div class="col-6 col-lg-4 mb-3 mb-md-7">
+        <li class="col-6 col-lg-4 mb-3 mb-md-7">
           <div class="card border-0 bg-light">
             <!-- 圖片區塊 -->
             <div class="p-2 p-md-3 p-lg-4 bg-white">
@@ -511,11 +452,11 @@
                 </div>
               </div>
             </div>
-            <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">會唱metal的鳥</p>
+            <h3 class="fs-7 fs-md-6 font-notoSans p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">會唱metal的鳥</h3>
           </div>
-        </div>
+        </li>
 
-        <div class="col-6 col-lg-4 mb-3 mb-md-7">
+        <li class="col-6 col-lg-4 mb-3 mb-md-7">
           <div class="card border-0 bg-light">
             <!-- 圖片區塊 -->
             <div class="p-2 p-md-3 p-lg-4 bg-white">
@@ -539,10 +480,10 @@
                 </div>
               </div>
             </div>
-            <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">一大一小兩個恰恰好</p>
+            <h3 class="fs-7 fs-md-6 font-notoSans p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">一大一小兩個恰恰好</h3>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
   </div>
 </div>
@@ -559,6 +500,7 @@
         <p class="font-notoSans">© ART NFT. All Rights Reserved</p>
       </div>
     </footer>
+
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <!-- jQuery -->
@@ -571,10 +513,69 @@
     <script src="https://kit.fontawesome.com/ffc1627107.js" crossorigin="anonymous"></script>
     <!-- AOS -->
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-    <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./assets/js/swiper.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
 
 </html>
+
+
+<!-- 連結你的錢包 -->
+<!-- AccountModal-phone -->
+<!-- 因 header 使用 Bootstrap sticky，如果把 Modal 放在 header 內，z-index 會跟 sticky 同層，
+    打開 modal 後的 modal-backdrop z-index 大於 sticky，所以會覆蓋 modal，故移至外層 -->
+<div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered vh-100 h-md-auto">
+    <div class="modal-content rounded-0 h-100">
+      <div class="modal-header justify-content-center mb-4">
+        <h5 class="modal-title" id="accountModalLabel">連結你的錢包</h5>
+        <button type="button" class="btn-close d-md-none" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <ul class="row gx-2" id="accountList">
+            <li class="col-md-6 mb-2">
+              <a href="#!" class="d-flex align-items-center link-black border p-3 btn-hover-check">
+                <img src="./assets/images/logo/connect01.png" alt="MetaMask" width="16" height="16" class="me-3">
+                <p>MetaMask</p>
+              </a>
+            </li>
+            <li class="col-md-6 mb-2">
+              <a href="#!" class="d-flex align-items-center link-black border p-3 btn-hover-check">
+                <img src="./assets/images/logo/connect02.png" alt="Coinbase Wallet" width="16" height="16" class="me-3">
+                <p>Coinbase Wallet</p>
+              </a>
+            </li>
+            <li class="col-md-6 mb-2">
+              <a href="#!" class="d-flex align-items-center link-black border p-3 btn-hover-check">
+                <img src="./assets/images/logo/connect03.png" alt="WalletConnect" width="16" height="16" class="me-3">
+                <p>WalletConnect</p>
+              </a>
+            </li>
+            <li class="col-md-6 mb-2">
+              <a href="#!" class="d-flex align-items-center link-black border p-3 btn-hover-check">
+                <img src="./assets/images/logo/connect04.png" alt="Phantom" width="16" height="16" class="me-3">
+                <p>Phantom</p>
+              </a>
+            </li>
+            <li class="col-md-6 mb-2">
+              <a href="#!" class="d-flex align-items-center link-black border p-3 btn-hover-check">
+                <img src="./assets/images/logo/connect05.png" alt="Glow" width="16" height="16" class="me-3">
+                <p>Glow</p>
+              </a>
+            </li>
+            <li class="col-md-6 mb-2">
+              <a href="#!" class="d-flex align-items-center link-black border p-3 btn-hover-check">
+                <img src="./assets/images/logo/connect06.png" alt="Fortmatic" width="16" height="16" class="me-3">
+                <p>Fortmatic</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center border-0 mb-3">
+        <a href="#!" class="bg-primary text-white d-block fs-5 py-2 px-4 border w-100 w-lg-auto text-center">連結錢包</a>
+      </div>
+    </div>
+  </div>
+</div>

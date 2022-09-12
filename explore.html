@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <header class="header border-bottom bg-light">
+    <header class="header border-bottom bg-light sticky-top">
       
 <!-- PC Nav -->
 <nav class="container d-flex justify-content-between align-items-center h-100">
@@ -58,7 +58,7 @@
     </a>
   </div>
 </nav>
-<!-- 手機 Menu -->
+<!-- 手機 Menu Button -->
 <div class="d-flex justify-content-center">
   <ul class="text-center container d-none bg-white pb-4 menu-phone" id="phoneMenu">
     <li class="border-bottom">
@@ -73,8 +73,381 @@
   </ul>
 </div>
 
+<!-- Search Nav -->
+<nav class="container d-flex align-items-center justify-content-between pt-3 position-absolute top-0 start-0 end-0 bg-light d-none" id="searchPhoneNav">
+  <div class="d-flex align-items-center flex-fill">
+    <a href="#!" class="link-black" id="btnSearchArrow">
+      <i class="fa-solid fa-angle-left" style="width: 18px; height: 18px;"></i>
+    </a>
+    <input type="text" class="bg-transparent w-100 h-100 outline-0 border-0 z-1" placeholder="搜尋作品名稱、藝術家名稱" name="searchBarPhone" id="searchBarPhone">
+  </div>
+  <label for="searchBarPhone" class="cursor-pointer">
+    <i class="fa-solid fa-magnifying-glass text-black fw-bold fs-6" style="width: 18px; height: 18px;"></i>
+  </label>
+</nav>
+    </header>
+
+    <div class="main">
+      
+<section class="container masonry mt-4 mb-6 mt-md-6 mb-md-11">
+  <div class="row masonry-row" data-masonry='{"percentPosition": true }'>
+
+    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+      <div class="card border-0 bg-light">
+        <div class="p-2 p-md-4 bg-white">
+          <div class="masonry__item position-relative">
+            <img src="./assets/images/art09.jpg" alt="區塊戀-他的私生活" class="img-fluid card-img-top masonry__img">
+            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+            <!-- hover -->
+            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+                  <p class="mb-2">區塊戀-他的私生活</p>
+                  <span class="d-flex align-items-center">
+                    <i class="fa-brands fa-ethereum me-2"></i>
+                    300
+                  </span>
+                </div>
+                <div class="text-end">
+                  <a href="#!" class="btn-more">more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="fs-7 fs-md-6 p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">區塊戀-他的私生活</h2>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+      <div class="card border-0 bg-light">
+        <div class="p-2 p-md-4 bg-white">
+          <div class="masonry__item position-relative">
+            <img src="./assets/images/art10.jpg" alt="夏娃的醜聞" class="img-fluid card-img-top masonry__img">
+            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+            <!-- hover -->
+            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+                  <p class="mb-2">夏娃的醜聞</p>
+                  <span class="d-flex align-items-center">
+                    <i class="fa-brands fa-ethereum me-2"></i>
+                    300
+                  </span>
+                </div>
+                <div class="text-end">
+                  <a href="#!" class="btn-more">more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="fs-7 fs-md-6 p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">夏娃的醜聞</h2>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+      <div class="card border-0 bg-light">
+        <div class="p-2 p-md-4 bg-white">
+          <div class="masonry__item position-relative">
+            <img src="./assets/images/art03.jpg" alt="十分鐘就到" class="img-fluid card-img-top masonry__img">
+            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+            <!-- hover -->
+            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+                  <p class="mb-2">十分鐘就到</p>
+                  <span class="d-flex align-items-center">
+                    <i class="fa-brands fa-ethereum me-2"></i>
+                    300
+                  </span>
+                </div>
+                <div class="text-end">
+                  <a href="#!" class="btn-more">more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="fs-7 fs-md-6 p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">十分鐘就到</h2>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+      <div class="card border-0 bg-light">
+        <div class="p-2 p-md-4 bg-white">
+          <div class="masonry__item position-relative">
+            <img src="./assets/images/art11.jpg" alt="沒有人愛我" class="img-fluid card-img-top masonry__img">
+            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+            <!-- hover -->
+            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+                  <p class="mb-2">沒有人愛我</p>
+                  <span class="d-flex align-items-center">
+                    <i class="fa-brands fa-ethereum me-2"></i>
+                    300
+                  </span>
+                </div>
+                <div class="text-end">
+                  <a href="#!" class="btn-more">more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="fs-7 fs-md-6 p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">沒有人愛我</h2>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+      <div class="card border-0 bg-light">
+        <div class="p-2 p-md-4 bg-white">
+          <div class="masonry__item position-relative">
+            <img src="./assets/images/art12.jpg" alt="不哭不哭眼淚是珍珠" class="img-fluid card-img-top masonry__img">
+            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+            <!-- hover -->
+            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+                  <p class="mb-2">不哭不哭眼淚是珍珠</p>
+                  <span class="d-flex align-items-center">
+                    <i class="fa-brands fa-ethereum me-2"></i>
+                    300
+                  </span>
+                </div>
+                <div class="text-end">
+                  <a href="#!" class="btn-more">more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="fs-7 fs-md-6 p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">不哭不哭眼淚是珍珠</h2>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+      <div class="card border-0 bg-light">
+        <div class="p-2 p-md-4 bg-white">
+          <div class="masonry__item position-relative">
+            <img src="./assets/images/art02.jpg" alt="藍色啤酒海" class="img-fluid card-img-top masonry__img">
+            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+            <!-- hover -->
+            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+                  <p class="mb-2">藍色啤酒海</p>
+                  <span class="d-flex align-items-center">
+                    <i class="fa-brands fa-ethereum me-2"></i>
+                    300
+                  </span>
+                </div>
+                <div class="text-end">
+                  <a href="#!" class="btn-more">more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="fs-7 fs-md-6 p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">藍色啤酒海</h2>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+      <div class="card border-0 bg-light">
+        <div class="p-2 p-md-4 bg-white">
+          <div class="masonry__item position-relative">
+            <img src="./assets/images/art04.jpg" alt="我這樣有美嗎" class="img-fluid card-img-top masonry__img">
+            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+            <!-- hover -->
+            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+                  <p class="mb-2">我這樣有美嗎</p>
+                  <span class="d-flex align-items-center">
+                    <i class="fa-brands fa-ethereum me-2"></i>
+                    300
+                  </span>
+                </div>
+                <div class="text-end">
+                  <a href="#!" class="btn-more">more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="fs-7 fs-md-6 p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">我這樣有美嗎</h2>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+      <div class="card border-0 bg-light">
+        <div class="p-2 p-md-4 bg-white">
+          <div class="masonry__item position-relative">
+            <img src="./assets/images/art27.jpg" alt="我真的受傷了" class="img-fluid card-img-top masonry__img">
+            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+            <!-- hover -->
+            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+                  <p class="mb-2">我真的受傷了</p>
+                  <span class="d-flex align-items-center">
+                    <i class="fa-brands fa-ethereum me-2"></i>
+                    300
+                  </span>
+                </div>
+                <div class="text-end">
+                  <a href="#!" class="btn-more">more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="fs-7 fs-md-6 p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">我真的受傷了</h2>
+      </div>
+    </div>
+    
+    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+      <div class="card border-0 bg-light">
+        <div class="p-2 p-md-4 bg-white">
+          <div class="masonry__item position-relative">
+            <img src="./assets/images/art19.jpg" alt="野小孩——叫你不要玩那個" class="img-fluid card-img-top masonry__img">
+            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+            <!-- hover -->
+            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+                  <p class="mb-2">野小孩——叫你不要玩那個</p>
+                  <span class="d-flex align-items-center">
+                    <i class="fa-brands fa-ethereum me-2"></i>
+                    300
+                  </span>
+                </div>
+                <div class="text-end">
+                  <a href="#!" class="btn-more">more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="fs-7 fs-md-6 p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">野小孩——叫你不要玩那個</h2>
+      </div>
+    </div>
+    
+    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+      <div class="card border-0 bg-light">
+        <div class="p-2 p-md-4 bg-white">
+          <div class="masonry__item position-relative">
+            <img src="./assets/images/art16.jpg" alt="柔美的細胞小將" class="img-fluid card-img-top masonry__img">
+            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+            <!-- hover -->
+            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+                  <p class="mb-2">柔美的細胞小將</p>
+                  <span class="d-flex align-items-center">
+                    <i class="fa-brands fa-ethereum me-2"></i>
+                    300
+                  </span>
+                </div>
+                <div class="text-end">
+                  <a href="#!" class="btn-more">more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="fs-7 fs-md-6 p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">柔美的細胞小將</h2>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+      <div class="card border-0 bg-light">
+        <div class="p-2 p-md-4 bg-white">
+          <div class="masonry__item position-relative">
+            <img src="./assets/images/art15.jpg" alt="心如止水——今天吃素" class="img-fluid card-img-top masonry__img">
+            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+            <!-- hover -->
+            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+                  <p class="mb-2">心如止水——今天吃素</p>
+                  <span class="d-flex align-items-center">
+                    <i class="fa-brands fa-ethereum me-2"></i>
+                    300
+                  </span>
+                </div>
+                <div class="text-end">
+                  <a href="#!" class="btn-more">more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="fs-7 fs-md-6 p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">心如止水——今天吃素</h2>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+      <div class="card border-0 bg-light">
+        <div class="p-2 p-md-4 bg-white">
+          <div class="masonry__item position-relative">
+            <img src="./assets/images/art06.jpg" alt="每當夏天我吹著溫暖的風" class="img-fluid card-img-top masonry__img">
+            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
+            <!-- hover -->
+            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div>
+                  <p class="mb-2">每當夏天我吹著溫暖的風</p>
+                  <span class="d-flex align-items-center">
+                    <i class="fa-brands fa-ethereum me-2"></i>
+                    300
+                  </span>
+                </div>
+                <div class="text-end">
+                  <a href="#!" class="btn-more">more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="fs-7 fs-md-6 p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">每當夏天我吹著溫暖的風</h2>
+      </div>
+    </div>
+
+  </div>
+</section>
+    </div>
+
+    <footer class="footer text-center border-top pt-2 ">
+      <div class=" border-top border-4 py-4">
+        <p class="font-notoSans">© ART NFT. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Masonry -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <!-- imagesLoaded -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/ffc1627107.js" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
+
+
 <!-- 連結你的錢包 -->
 <!-- AccountModal-phone -->
+<!-- 因 header 使用 Bootstrap sticky，如果把 Modal 放在 header 內，z-index 會跟 sticky 同層，
+    打開 modal 後的 modal-backdrop z-index 大於 sticky，所以會覆蓋 modal，故移至外層 -->
 <div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered vh-100 h-md-auto">
     <div class="modal-content rounded-0 h-100">
@@ -130,370 +503,3 @@
     </div>
   </div>
 </div>
-
-<!-- Search Nav -->
-<nav class="container d-flex align-items-center justify-content-between pt-3 position-absolute top-0 start-0 end-0 bg-light d-none" id="searchPhoneNav">
-  <div class="d-flex align-items-center flex-fill">
-    <a href="#!" class="link-black" id="btnSearchArrow">
-      <i class="fa-solid fa-angle-left" style="width: 18px; height: 18px;"></i>
-    </a>
-    <input type="text" class="bg-transparent w-100 h-100 outline-0 border-0 z-1" placeholder="搜尋作品名稱、藝術家名稱" name="searchBarPhone" id="searchBarPhone">
-  </div>
-  <label for="searchBarPhone" class="cursor-pointer">
-    <i class="fa-solid fa-magnifying-glass text-black fw-bold fs-6" style="width: 18px; height: 18px;"></i>
-  </label>
-</nav>
-    </header>
-
-    <div class="main">
-      
-<section class="container masonry mt-4 mb-6 mt-md-6 mb-md-11">
-  <div class="row masonry-row" data-masonry='{"percentPosition": true }'>
-    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
-      <div class="card border-0 bg-light">
-        <div class="p-2 p-md-4 bg-white">
-          <div class="masonry__item position-relative">
-            <img src="./assets/images/art09.jpg" alt="區塊戀-他的私生活" class="img-fluid card-img-top masonry__img">
-            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
-            <!-- hover -->
-            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
-              <div class="d-flex flex-column justify-content-between h-100">
-                <div>
-                  <p class="mb-2">區塊戀-他的私生活</p>
-                  <span class="d-flex align-items-center">
-                    <i class="fa-brands fa-ethereum me-2"></i>
-                    300
-                  </span>
-                </div>
-                <div class="text-end">
-                  <a href="#!" class="btn-more">more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">區塊戀-他的私生活</p>
-      </div>
-    </div>
-    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
-      <div class="card border-0 bg-light">
-        <div class="p-2 p-md-4 bg-white">
-          <div class="masonry__item position-relative">
-            <img src="./assets/images/art10.jpg" alt="夏娃的醜聞" class="img-fluid card-img-top masonry__img">
-            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
-            <!-- hover -->
-            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
-              <div class="d-flex flex-column justify-content-between h-100">
-                <div>
-                  <p class="mb-2">夏娃的醜聞</p>
-                  <span class="d-flex align-items-center">
-                    <i class="fa-brands fa-ethereum me-2"></i>
-                    300
-                  </span>
-                </div>
-                <div class="text-end">
-                  <a href="#!" class="btn-more">more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">夏娃的醜聞</p>
-      </div>
-    </div>
-    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
-      <div class="card border-0 bg-light">
-        <div class="p-2 p-md-4 bg-white">
-          <div class="masonry__item position-relative">
-            <img src="./assets/images/art03.jpg" alt="十分鐘就到" class="img-fluid card-img-top masonry__img">
-            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
-            <!-- hover -->
-            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
-              <div class="d-flex flex-column justify-content-between h-100">
-                <div>
-                  <p class="mb-2">十分鐘就到</p>
-                  <span class="d-flex align-items-center">
-                    <i class="fa-brands fa-ethereum me-2"></i>
-                    300
-                  </span>
-                </div>
-                <div class="text-end">
-                  <a href="#!" class="btn-more">more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">十分鐘就到</p>
-      </div>
-    </div>
-    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
-      <div class="card border-0 bg-light">
-        <div class="p-2 p-md-4 bg-white">
-          <div class="masonry__item position-relative">
-            <img src="./assets/images/art11.jpg" alt="沒有人愛我" class="img-fluid card-img-top masonry__img">
-            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
-            <!-- hover -->
-            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
-              <div class="d-flex flex-column justify-content-between h-100">
-                <div>
-                  <p class="mb-2">沒有人愛我</p>
-                  <span class="d-flex align-items-center">
-                    <i class="fa-brands fa-ethereum me-2"></i>
-                    300
-                  </span>
-                </div>
-                <div class="text-end">
-                  <a href="#!" class="btn-more">more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">沒有人愛我
-
-        </p>
-      </div>
-    </div>
-    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
-      <div class="card border-0 bg-light">
-        <div class="p-2 p-md-4 bg-white">
-          <div class="masonry__item position-relative">
-            <img src="./assets/images/art12.jpg" alt="不哭不哭眼淚是珍珠" class="img-fluid card-img-top masonry__img">
-            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
-            <!-- hover -->
-            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
-              <div class="d-flex flex-column justify-content-between h-100">
-                <div>
-                  <p class="mb-2">不哭不哭眼淚是珍珠</p>
-                  <span class="d-flex align-items-center">
-                    <i class="fa-brands fa-ethereum me-2"></i>
-                    300
-                  </span>
-                </div>
-                <div class="text-end">
-                  <a href="#!" class="btn-more">more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">不哭不哭眼淚是珍珠</p>
-      </div>
-    </div>
-    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
-      <div class="card border-0 bg-light">
-        <div class="p-2 p-md-4 bg-white">
-          <div class="masonry__item position-relative">
-            <img src="./assets/images/art02.jpg" alt="藍色啤酒海" class="img-fluid card-img-top masonry__img">
-            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
-            <!-- hover -->
-            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
-              <div class="d-flex flex-column justify-content-between h-100">
-                <div>
-                  <p class="mb-2">藍色啤酒海</p>
-                  <span class="d-flex align-items-center">
-                    <i class="fa-brands fa-ethereum me-2"></i>
-                    300
-                  </span>
-                </div>
-                <div class="text-end">
-                  <a href="#!" class="btn-more">more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">藍色啤酒海</p>
-      </div>
-    </div>
-    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
-      <div class="card border-0 bg-light">
-        <div class="p-2 p-md-4 bg-white">
-          <div class="masonry__item position-relative">
-            <img src="./assets/images/art04.jpg" alt="我這樣有美嗎" class="img-fluid card-img-top masonry__img">
-            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
-            <!-- hover -->
-            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
-              <div class="d-flex flex-column justify-content-between h-100">
-                <div>
-                  <p class="mb-2">我這樣有美嗎</p>
-                  <span class="d-flex align-items-center">
-                    <i class="fa-brands fa-ethereum me-2"></i>
-                    300
-                  </span>
-                </div>
-                <div class="text-end">
-                  <a href="#!" class="btn-more">more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">我這樣有美嗎</p>
-      </div>
-    </div>
-    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
-      <div class="card border-0 bg-light">
-        <div class="p-2 p-md-4 bg-white">
-          <div class="masonry__item position-relative">
-            <img src="./assets/images/art27.jpg" alt="我真的受傷了" class="img-fluid card-img-top masonry__img">
-            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
-            <!-- hover -->
-            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
-              <div class="d-flex flex-column justify-content-between h-100">
-                <div>
-                  <p class="mb-2">我真的受傷了</p>
-                  <span class="d-flex align-items-center">
-                    <i class="fa-brands fa-ethereum me-2"></i>
-                    300
-                  </span>
-                </div>
-                <div class="text-end">
-                  <a href="#!" class="btn-more">more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">我真的受傷了</p>
-      </div>
-    </div>
-
-    
-    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
-      <div class="card border-0 bg-light">
-        <div class="p-2 p-md-4 bg-white">
-          <div class="masonry__item position-relative">
-            <img src="./assets/images/art19.jpg" alt="野小孩——叫你不要玩那個" class="img-fluid card-img-top masonry__img">
-            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
-            <!-- hover -->
-            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
-              <div class="d-flex flex-column justify-content-between h-100">
-                <div>
-                  <p class="mb-2">野小孩——叫你不要玩那個</p>
-                  <span class="d-flex align-items-center">
-                    <i class="fa-brands fa-ethereum me-2"></i>
-                    300
-                  </span>
-                </div>
-                <div class="text-end">
-                  <a href="#!" class="btn-more">more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">野小孩——叫你不要玩那個</p>
-      </div>
-    </div>
-    
-    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
-      <div class="card border-0 bg-light">
-        <div class="p-2 p-md-4 bg-white">
-          <div class="masonry__item position-relative">
-            <img src="./assets/images/art16.jpg" alt="柔美的細胞小將" class="img-fluid card-img-top masonry__img">
-            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
-            <!-- hover -->
-            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
-              <div class="d-flex flex-column justify-content-between h-100">
-                <div>
-                  <p class="mb-2">柔美的細胞小將</p>
-                  <span class="d-flex align-items-center">
-                    <i class="fa-brands fa-ethereum me-2"></i>
-                    300
-                  </span>
-                </div>
-                <div class="text-end">
-                  <a href="#!" class="btn-more">more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">柔美的細胞小將</p>
-      </div>
-    </div>
-
-    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
-      <div class="card border-0 bg-light">
-        <div class="p-2 p-md-4 bg-white">
-          <div class="masonry__item position-relative">
-            <img src="./assets/images/art15.jpg" alt="心如止水——今天吃素" class="img-fluid card-img-top masonry__img">
-            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
-            <!-- hover -->
-            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
-              <div class="d-flex flex-column justify-content-between h-100">
-                <div>
-                  <p class="mb-2">心如止水——今天吃素</p>
-                  <span class="d-flex align-items-center">
-                    <i class="fa-brands fa-ethereum me-2"></i>
-                    300
-                  </span>
-                </div>
-                <div class="text-end">
-                  <a href="#!" class="btn-more">more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">心如止水——今天吃素</p>
-      </div>
-    </div>
-
-    <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
-      <div class="card border-0 bg-light">
-        <div class="p-2 p-md-4 bg-white">
-          <div class="masonry__item position-relative">
-            <img src="./assets/images/art06.jpg" alt="每當夏天我吹著溫暖的風" class="img-fluid card-img-top masonry__img">
-            <a href="artworks-detail.html" class="d-block position-absolute top-0 h-100 w-100"></a>
-            <!-- hover -->
-            <div class="masonry__detail d-none position-absolute top-0 start-0 bottom-0 end-0 text-white p-3 m-3">
-              <div class="d-flex flex-column justify-content-between h-100">
-                <div>
-                  <p class="mb-2">每當夏天我吹著溫暖的風</p>
-                  <span class="d-flex align-items-center">
-                    <i class="fa-brands fa-ethereum me-2"></i>
-                    300
-                  </span>
-                </div>
-                <div class="text-end">
-                  <a href="#!" class="btn-more">more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">每當夏天我吹著溫暖的風</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-    </div>
-
-    <footer class="footer text-center border-top pt-2 ">
-      <div class=" border-top border-4 py-4">
-        <p class="font-notoSans">© ART NFT. All Rights Reserved</p>
-      </div>
-    </footer>
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- Masonry -->
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <!-- imagesLoaded -->
-    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/ffc1627107.js" crossorigin="anonymous"></script>
-    <!-- AOS -->
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-    <!-- Swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./assets/js/swiper.js"></script>
-    <script src="./assets/js/all.js"></script>
-  </body>
-
-</html>

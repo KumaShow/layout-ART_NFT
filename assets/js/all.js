@@ -13,6 +13,14 @@ function phoneMenu() {
     body.classList.toggle("bg-mask-dark");
     btnNavMenu.classList.toggle("d-none");
     btnNavClose.classList.toggle("d-none");
+    addEventListener("resize", function () {
+      if (window.innerWidth > 768) {
+        phoneMenu.classList.add("d-none");
+        body.classList.remove("bg-mask-dark");
+        btnNavMenu.classList.remove("d-none");
+        btnNavClose.classList.add("d-none");
+      }
+    });
   }); // search bar 手機板切換
 
   var btnPhoneSearch = document.querySelector("#btnPhoneSearch");
@@ -25,6 +33,12 @@ function phoneMenu() {
   btnSearchArrow.addEventListener("click", function () {
     searchPhoneNav.classList.add("d-none");
     searchPhoneNav.classList.remove("animation-from-left");
+  });
+  addEventListener("resize", function () {
+    if (window.innerWidth > 768) {
+      searchPhoneNav.classList.add("d-none");
+      searchPhoneNav.classList.remove("animation-from-left");
+    }
   });
 } // 藝術品系列頁面 篩選箭頭切換
 
@@ -76,8 +90,7 @@ function btnFilter() {
 
 
 function rankingBtnToggle() {
-  var rankingItem = document.querySelectorAll('.ranking-item'); // this 問題待處理
-
+  var rankingItem = document.querySelectorAll('.ranking-item');
   rankingItem.forEach(function (item) {
     item.addEventListener("click", function () {
       if (item.classList.contains("triangle-br-plus")) {
@@ -99,43 +112,52 @@ if (currentPage == '/artworks.html') {
 }
 "use strict";
 
-var swiperArtist = new Swiper('.swiperArtist', {
-  loop: true,
-  slidesPerView: 1,
-  simulateTouch: true,
-  grabCursor: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
-  breakpoints: {
-    992: {
-      slidesPerView: 3,
-      centeredSlides: true
+var currentPage = window.location.pathname;
+
+if (currentPage === "/index.html") {
+  // index 首頁 - Artist 熱門藝術家
+  var swiperArtist = new Swiper('.swiperArtist', {
+    loop: true,
+    slidesPerView: 1,
+    simulateTouch: true,
+    grabCursor: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 3,
+        centeredSlides: true
+      }
     }
-  }
-});
-var swiperOther = new Swiper(".swiperOther", {
-  slidesPerView: 2,
-  spaceBetween: 24,
-  loop: true,
-  grabCursor: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  breakpoints: {
-    992: {
-      slidesPerView: 4,
-      spaceBetween: 24
+  });
+} else if (currentPage === "/artworks-detail.html") {
+  // artworks-detail 藝術品細項 - Others 其餘作品
+  var swiperOther = new Swiper(".swiperOther", {
+    slidesPerView: 2,
+    spaceBetween: 24,
+    loop: true,
+    grabCursor: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 24
+      }
     }
-  }
-});
+  });
+}
 "use strict";
 
 // masonry
 $('.masonry-row').imagesLoaded().progress(function () {
-  $('.masonry-row').masonry(); // 渲染整體畫面
+  $('.masonry-row').masonry({
+    horizontalOrder: true
+  }); // 渲染整體畫面
 }); // AOS
 // AOS.init();
 //# sourceMappingURL=all.js.map

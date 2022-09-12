@@ -14874,6 +14874,10 @@ fieldset:disabled .btn {
   color: #fff;
 }
 
+.hover-primary:hover {
+  color: #E6553B;
+}
+
 .mask-dark {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -14890,6 +14894,7 @@ fieldset:disabled .btn {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
 }
 
 .outline-0 {
@@ -14923,6 +14928,10 @@ fieldset:disabled .btn {
   -webkit-transform: translateX(-50%) translateY(-50%);
       -ms-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .pseudo-border-end-tp {
@@ -15262,6 +15271,15 @@ body {
           writing-mode: vertical-lr;
 }
 
+.text-overflow-4 {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
 .swiper {
   width: 100%;
   height: 500px;
@@ -15423,6 +15441,9 @@ body {
 
 @media only screen and (min-width: 768px) {
   .masonry__item:hover .masonry__img {
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
     -webkit-filter: brightness(50%);
             filter: brightness(50%);
   }
@@ -15457,10 +15478,6 @@ body {
   }
 }
 
-.main {
-  min-height: calc(79vh);
-}
-
 .logo {
   background: url("../images/logo.svg") no-repeat center center;
   background-size: cover;
@@ -15492,6 +15509,10 @@ body {
   position: absolute;
   top: 51px;
   z-index: 10;
+}
+
+.main {
+  min-height: calc(79vh);
 }
 
 .recommend .card-img {
