@@ -102,12 +102,12 @@ function rankingBtnToggle() {
 
 phoneMenu();
 
-if (currentPage == '/artworks.html') {
+if (currentPage.includes("artworks.html")) {
   btnFilter();
   filterArrow();
-} else if (currentPage == '/marketRanking.html') {
+} else if (currentPage.includes("marketRanking")) {
   rankingBtnToggle();
-} else if (currentPage == '/artworks-detail.html') {
+} else if (currentPage.includes("artworks-detail.html")) {
   filterArrow();
 }
 "use strict";
