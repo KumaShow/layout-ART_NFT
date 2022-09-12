@@ -52,6 +52,10 @@
   color: #fff;
 }
 
+.hover-primary:hover {
+  color: $primary;
+}
+
 .mask-dark {
   background-color: rgba(0,0,0,0.5);
 }
@@ -66,6 +70,7 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
+    z-index: 9;
   }
 }
 
@@ -97,6 +102,9 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .pseudo-border-end-tp {
