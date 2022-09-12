@@ -1,7 +1,3 @@
-.main {
-  min-height: calc(79vh);
-}
-
 .logo{
   background: url("../images/logo.svg") no-repeat center center;
   background-size: cover;
@@ -18,6 +14,7 @@
 
 .header {
   height: 50px;
+
   @include respond-min(lg) {
     height: 72px;
   }
@@ -27,4 +24,8 @@
   position: absolute;
   top: 51px;
   z-index: 10;
+}
+
+.main {
+  min-height: calc(79vh);
 }
