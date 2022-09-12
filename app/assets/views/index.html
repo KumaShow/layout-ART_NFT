@@ -7,8 +7,9 @@ current: index
 <!-- 推 薦 系 列 -->
 <section class="recommend mb-6 mb-lg-11 mt-md-6">
   <div class="container">
-    <div class="row g-0">
-      <div class="col-12">
+    <ul class="row g-0">
+      <!-- 推薦 1 -->
+      <li class="col-12">
         <div class="card">
           <div class="row g-0">
             <div class="col-lg-1 d-none d-lg-block">
@@ -20,7 +21,7 @@ current: index
             <div class="col-lg-7">
               <img src="./assets/images/art01.jpg" class="" alt="Art01">
             </div>
-            <div class="col-lg-4 d-flex flex-column py-5 px-3 pt-lg-11 pb-lg-4">
+            <div class="col-lg-4 d-flex flex-column py-5 px-3 pt-lg-11 pb-lg-4 px-xl-4">
               <div class="card-body">
                 <h5 class="card-subTitle mb-2">Kemus Wu</h5>
                 <!-- md字體會覆蓋 -->
@@ -28,54 +29,53 @@ current: index
                 <p class="card-text mb-4">眼睛，總是吸引著我們的注意力，看、被看，也許眼睛裡有著從另一個世界看我們的世界。</p>
               </div>
               <div class="text-end">
-                <a href="#" class="btn-more">MORE</a>
+                <a href="artworks.html" class="btn-more">MORE</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="col-lg-6">
+      </li>
+      <!-- 推薦 2 -->
+      <li class="col-lg-6">
         <div class="card">
           <div class="row flex-lg-row-reverse g-0">
             <div class="col-md-6">
               <img src="./assets/images/art02.jpg" class="card-img h-100 img-cover" alt="Art02">
             </div>
-            <div class="col-md-6">
-              <div class="card-body py-5 px-3">
+            <div class="col-md-6 d-flex flex-column px-3 pb-4 pt-5 pt-lg-7 px-xl-4">
+              <div class="card-body">
                 <h5 class="card-subTitle mb-2">Joanne</h5>
                 <h3 class="card-title fw-bold fs-md-2 mb-4">海洋波度</h3>
-                <p class="card-text mb-4">海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。</p>
-                <div class="text-end">
-                  <a href="#" class="btn-more">MORE</a>
-                </div>
+                <p class="card-text text-overflow-4 mb-4">海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。</p>
+              </div>
+              <div class="text-end">
+                <a href="artworks.html" class="btn-more">MORE</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="col-lg-6">
+      </li>
+      <!-- 推薦 3 -->
+      <li class="col-lg-6">
         <div class="card">
           <div class="row flex-row-reverse g-0">
             <div class="col-md-6">
               <img src="./assets/images/art21.jpg" class="card-img h-100 img-cover" alt="Art21">
             </div>
-            <div class="col-md-6">
-              <div class="card-body py-5 px-3">
+            <div class="col-md-6 d-flex flex-column px-3 pb-4 pt-5 pt-lg-7 px-xl-4">
+              <div class="card-body">
                 <h5 class="card-subTitle mb-2">Michael</h5>
                 <h3 class="card-title fw-bold fs-md-2 mb-4">我家窗前的鳥</h3>
-                <p class="card-text mb-4">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
-                <div class="text-end">
-                  <a href="artworks.html" class="btn-more">MORE</a>
-                </div>
+                <p class="card-text text-overflow-4 mb-4">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+              </div>
+              <div class="text-end">
+                <a href="artworks.html" class="btn-more">MORE</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-    </div>
+      </li>
+    </ul>
 
   </div>
   
@@ -91,9 +91,9 @@ current: index
     </div>
 
     <div class="container">
-      <div class="row">
+      <ul class="row">
         <!-- 1 -->
-        <div class="col-md-6 col-lg-4">
+        <li class="col-md-6 col-lg-4">
           <div class="card mb-3 mb-md-4">
             <div class="d-flex d-lg-block position-relative">
               <div class="px-2 py-4 d-flex align-items-center justify-content-center ranking__order">
@@ -101,14 +101,14 @@ current: index
               </div>
               <!-- ranking 圖片 -->
               <!-- 手機 hover -->
-              <a href="#!" class="h-auto hover-bg-more d-lg-none">
+              <a href="artworks-detail.html" class="h-auto hover-bg-more d-lg-none">
                 <div class="ranking__img ranking__img--1"></div>
               </a>
               <!-- PC hover -->
               <div class="ranking__img ranking__img--1 ranking__img--top  position-relative d-none d-lg-block">
-                <div class="mask-dark d-none position-absolute top-0 start-0 bottom-0 end-0">
-                  <a href="#!" class="btn-more position-absolute bottom-0 end-0">more</a>
-                </div>
+                <a href="artworks-detail.html" class="mask-dark d-none position-absolute top-0 start-0 bottom-0 end-0">
+                  <button class="btn-more position-absolute bottom-0 end-0">more</button>
+                </a>
               </div>
 
               <div class="flex-fill">
@@ -125,9 +125,9 @@ current: index
               </div>
             </div>
           </div>
-        </div>
+        </li>
         <!-- 2 -->
-        <div class="col-md-6 col-lg-4">
+        <li class="col-md-6 col-lg-4">
           <div class="card mb-3 mb-md-4">
             <div class="d-flex d-lg-block position-relative">
               <div class="px-2 py-4 d-flex align-items-center justify-content-center ranking__order">
@@ -135,14 +135,14 @@ current: index
               </div>
               <!-- ranking 圖片 -->
               <!-- 手機 hover -->
-              <a href="#!" class="h-auto hover-bg-more d-lg-none">
+              <a href="artworks-detail.html" class="h-auto hover-bg-more d-lg-none">
                 <div class="ranking__img ranking__img--2"></div>
               </a>
               <!-- PC hover -->
               <div class="ranking__img ranking__img--2 ranking__img--top  position-relative d-none d-lg-block">
-                <div class="mask-dark d-none position-absolute top-0 start-0 bottom-0 end-0">
-                  <a href="#!" class="btn-more position-absolute bottom-0 end-0">more</a>
-                </div>
+                <a href="artworks-detail.html" class="mask-dark d-none position-absolute top-0 start-0 bottom-0 end-0">
+                  <button class="btn-more position-absolute bottom-0 end-0">more</button>
+                </a>
               </div>
 
               <div class="flex-fill">
@@ -159,9 +159,9 @@ current: index
               </div>
             </div>
           </div>
-        </div>
+        </li>
         <!-- 3 -->
-        <div class="col-md-6 col-lg-4">
+        <li class="col-md-6 col-lg-4">
           <div class="card mb-3 mb-md-4">
             <div class="d-flex d-lg-block position-relative">
               <div class="px-2 py-4 d-flex align-items-center justify-content-center ranking__order">
@@ -169,14 +169,14 @@ current: index
               </div>
               <!-- ranking 圖片 -->
               <!-- 手機 hover -->
-              <a href="#!" class="h-auto hover-bg-more d-lg-none">
+              <a href="artworks-detail.html" class="h-auto hover-bg-more d-lg-none">
                 <div class="ranking__img ranking__img--3"></div>
               </a>
               <!-- PC hover -->
               <div class="ranking__img ranking__img--3 ranking__img--top  position-relative d-none d-lg-block">
-                <div class="mask-dark d-none position-absolute top-0 start-0 bottom-0 end-0">
-                  <a href="#!" class="btn-more position-absolute bottom-0 end-0">more</a>
-                </div>
+                <a href="artworks-detail.html" class="mask-dark d-none position-absolute top-0 start-0 bottom-0 end-0">
+                  <button class="btn-more position-absolute bottom-0 end-0">more</button>
+                </a>
               </div>
 
               <div class="flex-fill">
@@ -193,16 +193,16 @@ current: index
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
+        </li>
+        <!-- 4 -->
+        <li class="col-md-6 col-lg-4">
           <div class="card mb-3 mb-lg-0">
             <div class="d-flex">
               <div class="px-2 py-4">
                 <p class="font-paytone fs-3">4</p>
               </div>
               <!-- ranking 圖片 -->
-              <a href="#!" class="h-auto hover-bg-more">
+              <a href="artworks-detail.html" class="h-auto hover-bg-more">
                 <div class="ranking__img ranking__img--4"></div>
               </a>
               <div class="flex-fill">
@@ -219,16 +219,16 @@ current: index
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
+        </li>
+        <!-- 5 -->
+        <li class="col-md-6 col-lg-4">
           <div class="card mb-3 mb-md-0">
             <div class="d-flex">
               <div class="px-2 py-4">
                 <p class="font-paytone fs-3">5</p>
               </div>
               <!-- ranking 圖片 -->
-              <a href="#!" class="h-auto hover-bg-more">
+              <a href="artworks-detail.html" class="h-auto hover-bg-more">
                 <div class="ranking__img ranking__img--5"></div>
               </a>
               <div class="flex-fill">
@@ -245,16 +245,16 @@ current: index
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
+        </li>
+        <!-- 6 -->
+        <li class="col-md-6 col-lg-4">
           <div class="card">
             <div class="d-flex">
               <div class="px-2 py-4">
                 <p class="font-paytone fs-3">6</p>
               </div>
               <!-- ranking 圖片 -->
-              <a href="#!" class="h-auto hover-bg-more ">
+              <a href="artworks-detail.html" class="h-auto hover-bg-more ">
                 <div class="ranking__img ranking__img--6"></div>
               </a>
               <div class="flex-fill">
@@ -271,8 +271,8 @@ current: index
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
@@ -287,9 +287,9 @@ current: index
     </div>
     <!-- Swipper -->
     <div class="swiper swiperArtist">
-      <div class="swiper-wrapper">
+      <ul class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide">
+        <li class="swiper-slide">
           <div>
             <div class="position-relative text-start">
               <img src="./assets/images/artist01.jpg" alt="Artist01" class="mb-3">
@@ -301,50 +301,50 @@ current: index
             </div>
             <p class="bg-white p-4 d-lg-none">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
           </div>
-        </div>
+        </li>
 
-        <div class="swiper-slide">
+        <li class="swiper-slide">
           <div>
             <div class="position-relative text-start">
               <img src="./assets/images/artist02.jpg" alt="Artist02" class="mb-3">
                 <div class="swiper-content">
                   <h3 class="fs-2 lh-1 fs-xl-10 w-lg-50 text-white text-start position-absolute top-5 start-5">Antony Wu</h3>
-                  <a href="#!" class="btn-more-white  link-black bg-white position-absolute bottom-2 end-2 fs-5">more</a>
+                  <a href="artist.html" class="btn-more-white  link-black bg-white position-absolute bottom-2 end-2 fs-5">more</a>
                   <p class="d-none d-lg-block bg-white fs-7 opacity-80 w-50 position-absolute start-2 bottom-2 p-3">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
                 </div>
             </div>
             <p class="bg-white p-4 d-lg-none">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
           </div>
-        </div>
+        </li>
         
-        <div class="swiper-slide">
+        <li class="swiper-slide">
           <div>
             <div class="position-relative text-start">
               <img src="./assets/images/artist03.jpg" alt="Artist03" class="mb-3">
               <div class="swiper-content">
                 <h3 class="fs-2 lh-1 fs-xl-10 w-lg-50 text-white text-start position-absolute top-5 start-5">Antony WOW</h3>
-                <a href="#!" class="btn-more-white link-black bg-white position-absolute bottom-2 end-2 fs-5">more</a>
+                <a href="artist.html" class="btn-more-white link-black bg-white position-absolute bottom-2 end-2 fs-5">more</a>
                 <p class="d-none d-lg-block bg-white fs-7 opacity-80 w-50 position-absolute start-2 bottom-2 p-3">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
               </div>
             </div>
             <p class="bg-white p-4 d-lg-none">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
           </div>
-        </div>
+        </li>
 
-        <div class="swiper-slide">
+        <li class="swiper-slide">
           <div>
             <div class="position-relative text-start">
               <img src="./assets/images/artist04.jpg" alt="Artist04" class="mb-3">
               <div class="swiper-content">
                 <h3 class="fs-2 lh-1 fs-xl-10 w-lg-50 text-white text-start position-absolute top-5 start-5">Patrim</h3>
-                <a href="#!" class="btn-more-white link-black bg-white position-absolute bottom-2 end-2 fs-5">more</a>
+                <a href="artist.html" class="btn-more-white link-black bg-white position-absolute bottom-2 end-2 fs-5">more</a>
                 <p class="d-none d-lg-block bg-white fs-7 opacity-80 w-50 position-absolute start-2 bottom-2 p-3">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
               </div>
             </div>
             <p class="bg-white p-4 d-lg-none">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
 
       <div class="swiper-pagination"></div>
 
@@ -361,8 +361,8 @@ current: index
       <a href="explore.html" class="btn-more border-0 hover-border position-absolute bottom-0 end-0">more</a>
     </div>
     <!-- 最新藝術品 - masonry -->
-    <div class="row masonry" data-masonry='{"percentPosition": true }'>
-      <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+    <ul class="row masonry" data-masonry='{"percentPosition": true }'>
+      <li class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
         <div class="card border-0 bg-light">
           <div class="p-2 p-md-3 p-lg-4 bg-white">
             <div class="masonry__item position-relative">
@@ -379,16 +379,17 @@ current: index
                     </span>
                   </div>
                   <div class="text-center">
-                    <a href="#!" class="btn-more">more</a>
+                    <a href="artworks-detail.html" class="btn-more">more</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">區塊戀-他的私生活</p>
+          <h3 class="fs-7 fs-md-6 p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">區塊戀-他的私生活</h3>
         </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+      </li>
+
+      <li class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
         <div class="card border-0 bg-light">
           <div class="p-2 p-md-3 p-lg-4 bg-white">
             <div class="masonry__item position-relative">
@@ -405,16 +406,17 @@ current: index
                     </span>
                   </div>
                   <div class="text-end">
-                    <a href="#!" class="btn-more">more</a>
+                    <a href="artworks-detail.html" class="btn-more">more</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">夏娃的醜聞</p>
+          <h3 class="fs-7 fs-md-6 p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">夏娃的醜聞</h3>
         </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+      </li>
+
+      <li class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
         <div class="card border-0 bg-light">
           <div class="p-2 p-md-3 p-lg-4 bg-white">
             <div class="masonry__item position-relative">
@@ -431,16 +433,17 @@ current: index
                     </span>
                   </div>
                   <div class="text-end">
-                    <a href="#!" class="btn-more">more</a>
+                    <a href="artworks-detail.html" class="btn-more">more</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">十分鐘就到</p>
+          <h3 class="fs-7 fs-md-6 p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">十分鐘就到</h3>
         </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+      </li>
+
+      <li class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
         <div class="card border-0 bg-light">
           <div class="p-2 p-md-3 p-lg-4 bg-white">
             <div class="masonry__item position-relative">
@@ -457,18 +460,19 @@ current: index
                     </span>
                   </div>
                   <div class="text-end">
-                    <a href="#!" class="btn-more">more</a>
+                    <a href="artworks-detail.html" class="btn-more">more</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">沒有人愛我
+          <h3 class="fs-7 fs-md-6 p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">沒有人h3我
 
           </p>
         </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+      </li>
+
+      <li class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
         <div class="card border-0 bg-light">
           <div class="p-2 p-md-3 p-lg-4 bg-white">
             <div class="masonry__item position-relative">
@@ -485,16 +489,17 @@ current: index
                     </span>
                   </div>
                   <div class="text-end">
-                    <a href="#!" class="btn-more">more</a>
+                    <a href="artworks-detail.html" class="btn-more">more</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">不哭不哭眼淚是珍珠</p>
+          <h3 class="fs-7 fs-md-6 p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">不哭不哭眼淚是珍珠</h3>
         </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+      </li>
+
+      <li class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
         <div class="card border-0 bg-light">
           <div class="p-2 p-md-3 p-lg-4 bg-white">
             <div class="masonry__item position-relative">
@@ -511,16 +516,17 @@ current: index
                     </span>
                   </div>
                   <div class="text-end">
-                    <a href="#!" class="btn-more">more</a>
+                    <a href="artworks-detail.html" class="btn-more">more</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">藍色啤酒海</p>
+          <h3 class="fs-7 fs-md-6 p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">藍色啤酒海</h3>
         </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+      </li>
+
+      <li class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
         <div class="card border-0 bg-light">
           <div class="p-2 p-md-3 p-lg-4 bg-white">
             <div class="masonry__item position-relative">
@@ -537,16 +543,17 @@ current: index
                     </span>
                   </div>
                   <div class="text-end">
-                    <a href="#!" class="btn-more">more</a>
+                    <a href="artworks-detail.html" class="btn-more">more</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">我這樣有美嗎</p>
+          <h3 class="fs-7 fs-md-6 p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">我這樣有美嗎</h3>
         </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
+      </li>
+
+      <li class="col-6 col-md-4 col-lg-3 mb-3 mb-md-7">
         <div class="card border-0 bg-light">
           <div class="p-2 p-md-3 p-lg-4 bg-white">
             <div class="masonry__item position-relative">
@@ -563,60 +570,61 @@ current: index
                     </span>
                   </div>
                   <div class="text-end">
-                    <a href="#!" class="btn-more">more</a>
+                    <a href="artworks-detail.html" class="btn-more">more</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <p class="p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">我真的受傷了</p>
+          <h3 class="fs-7 fs-md-6 p-2 p-md-0 py-md-3 fw-bold border-bottom-md ">我真的受傷了</h3>
         </div>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
 </section>
 <!-- Join Us -->
 <section class="joinUs">
-  <div class="text-center border-bottom border-4 mb-2">
-    <h2 class="fs-2 fs-lg-1 fw-bold mb-3">Join Us</h2>
-    <p class="fs-4">創建並出售你的藝術品</p>
+  <div class="text-center border-bottom border-4 mb-2 pb-4 pb-lg-6">
+    <h2 class="fs-2 fs-lg-1 fw-bold mb-3 lh-1">Join Us<br>
+      <span class="fs-4">創建並出售你的藝術品</span>
+    </h2>
   </div>
 
   <div class="border-top">
     <div class="container">
-      <div class="row py-7 py-lg-11">
-        <div class="col-md-6 col-lg-3">
+      <ul class="row py-7 py-lg-11">
+        <li class="col-md-6 col-lg-3">
           <div class="card bg-light border-0 text-center mb-7 mb-lg-0">
             <i class="fa-solid fa-wallet fs-1 text-primary mb-3"></i>
             <h5 class="fw-bold mb-4">設置你的錢包</h5>
             <p>設置好您選擇的錢包後<br>點擊右上角的錢包圖標進行連接</p>
           </div>
-        </div>
+        </li>
 
-        <div class="col-md-6 col-lg-3">
+        <li class="col-md-6 col-lg-3">
           <div class="card bg-light border-0 text-center mb-7 mb-lg-0">
             <i class="fa-solid fa-pen-ruler fs-1 text-primary mb-3"></i>
             <h5 class="fw-bold mb-4">創建您的主頁</h5>
             <p>註冊成為會員，編輯您的資料<br>讓大家了解你</p>
           </div>
-        </div>
+        </li>
 
-        <div class="col-md-6 col-lg-3">
+        <li class="col-md-6 col-lg-3">
           <div class="card bg-light border-0 text-center mb-7 mb-lg-0">
             <i class="fa-solid fa-icons fs-1 text-primary mb-3"></i>
             <h5 class="fw-bold mb-4">添加你的 NFT</h5>
             <p>上傳你的作品<br>添加標題和描述</p>
           </div>
-        </div>
+        </li>
 
-        <div class="col-md-6 col-lg-3">
+        <li class="col-md-6 col-lg-3">
           <div class="card bg-light border-0 text-center mb-7 mb-lg-0">
             <i class="fa-solid fa-tags fs-1 text-primary mb-3"></i>
             <h5 class="fw-bold mb-4">列出它們出售</h5>
             <p>選擇出售 NFT 的方式<br>並設定價格，等待有緣人</p>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
