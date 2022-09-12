@@ -13,7 +13,17 @@ function phoneMenu() {
     body.classList.toggle("bg-mask-dark");
     btnNavMenu.classList.toggle("d-none");
     btnNavClose.classList.toggle("d-none");
+
+    addEventListener("resize", ()=> {
+      if (window.innerWidth > 768) {
+        phoneMenu.classList.add("d-none");
+        body.classList.remove("bg-mask-dark");
+        btnNavMenu.classList.remove("d-none");
+        btnNavClose.classList.add("d-none");
+      }
+    })
   })
+
   // search bar 手機板切換
   const btnPhoneSearch = document.querySelector("#btnPhoneSearch");
   const btnSearchArrow = document.querySelector("#btnSearchArrow");
@@ -23,9 +33,17 @@ function phoneMenu() {
     searchPhoneNav.classList.remove("d-none");
     searchPhoneNav.classList.add("animation-from-left");
   })
+
   btnSearchArrow.addEventListener("click", () => {
     searchPhoneNav.classList.add("d-none");
     searchPhoneNav.classList.remove("animation-from-left");
+  })
+
+  addEventListener("resize", ()=> {
+    if (window.innerWidth > 768) {
+      searchPhoneNav.classList.add("d-none");
+      searchPhoneNav.classList.remove("animation-from-left");
+    }
   })
 }
 
@@ -78,12 +96,10 @@ function btnFilter() {
   }
 }
 
-
-
 // 市場排行 + / - 切換
 function rankingBtnToggle() {
   const rankingItem = document.querySelectorAll('.ranking-item')
-  // this 問題待處理
+
   rankingItem.forEach(item => {
     item.addEventListener("click", ()=> {
       if(item.classList.contains("triangle-br-plus")) {
@@ -92,8 +108,6 @@ function rankingBtnToggle() {
     })
   });
 }
-
-
 
 phoneMenu()
 
