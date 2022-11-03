@@ -13,7 +13,13 @@
 ## 頁面簡介
 
 ### 首頁
-![](https://i.imgur.com/8BEk7rV.jpg)
+![](https://i.imgur.com/DezDkXdl.jpg)
 
 ### 瀑布流
-![]()
+![](https://i.imgur.com/Yk5dAPEl.jpg)
+
+> 詳細畫面請觀看: 
+> [首頁](https://kumashow.github.io/layout-ART_NFT/index.html)
+> [熱門藝術家](https://kumashow.github.io/layout-ART_NFT/artist.html)
+> [藝術品資料](https://kumashow.github.io/layout-ART_NFT/artworks-detail.html)
+> [藝術品系列](https://kumashow.github.io/layout-ART_NFT/artworks.html)
